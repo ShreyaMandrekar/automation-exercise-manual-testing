@@ -449,14 +449,17 @@ Special Offers is an optional checkbox. Both selected and unselected states allo
 First Name should accept valid input and should not allow blank submission if the field is mandatory.
 
 **Actual Result:**  
-NOT EXECUTED
+1. When the First Name field was left blank, a validation popup displayed "Please fill out this field."
+2. The valid First Name "QA" was accepted and the account was created successfully.
+3. Numeric input "12345" was accepted in the First Name field and the account was created successfully.
+4. Special-character input "@QA" was accepted in the First Name field and the account was created successfully.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The First Name field correctly enforced the mandatory-field validation. Numeric and special-character inputs were accepted; this was recorded as an observation and not treated as a defect because no explicit requirement restricting First Name to alphabetic characters was available.
 
 ---
 
