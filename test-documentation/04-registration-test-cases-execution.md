@@ -392,14 +392,17 @@ The Day, Month, and Year dropdowns displayed selectable values and accepted a va
 Newsletter should be optional and the application should allow account creation with either selected or unselected state.
 
 **Actual Result:**  
-NOT EXECUTED
+1. The Newsletter checkbox was unchecked by default.
+2. Selecting the Newsletter checkbox changed its state to checked.
+3. Clicking the selected Newsletter checkbox again changed its state back to unchecked.
+4. Registration was successful when the Newsletter checkbox was unselected. Registration was also successful when the Newsletter checkbox was selected. There was no difference in account creation based on the checkbox state.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+Newsletter is an optional checkbox. Both selected and unselected states allowed successful registration. No defect was identified.
 
 ---
 
