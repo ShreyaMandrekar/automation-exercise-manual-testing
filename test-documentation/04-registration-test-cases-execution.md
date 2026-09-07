@@ -231,14 +231,20 @@ The application prevented registration using an already registered email address
 Name should be accepted according to the application's validation rules. Blank input should not be accepted if the field is mandatory.
 
 **Actual Result:**  
-NOT EXECUTED
+Blank Name: A validation pop-up displayed "Please fill out this field."
 
-**Status:** NOT EXECUTED
+Valid Name: The application accepted the valid Name and proceeded to the account information page.
+
+Numeric Name: The application accepted numeric input in the Name field and proceeded to the account information page.
+
+Special Characters: The application accepted special-character input in the Name field and proceeded to the account information page.
+
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-Specific accepted/rejected character behavior will be recorded during execution.
+Mandatory Name validation worked as expected. Numeric and special-character inputs were accepted during testing. This behavior is recorded as an observation and is not classified as a defect because no explicit requirement restricting Name input to alphabetic characters was established.
 
 ---
 
