@@ -204,14 +204,14 @@ An email address belonging to an already registered account.
 The application should prevent registration using an already registered email address and display an appropriate message.
 
 **Actual Result:**  
-NOT EXECUTED
+A red validation message was displayed below the Email Address field stating "Email Address already exist!"
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The application prevented registration using an already registered email address and displayed an appropriate validation message. No defect was observed.
 
 ---
 
