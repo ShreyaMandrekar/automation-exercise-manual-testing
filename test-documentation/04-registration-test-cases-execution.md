@@ -133,14 +133,18 @@ A new account was successfully created with valid registration data. Account Cre
 Appropriate validation should prevent submission when required fields are blank.
 
 **Actual Result:**  
-NOT EXECUTED
+Name blank: A validation pop-up displayed "Please fill out this field." on the Name field.
 
-**Status:** NOT EXECUTED
+Email blank: A validation pop-up displayed "Please fill out this field." on the Email Address field.
+
+Both Name and Email blank: A validation pop-up displayed "Please fill out this field." on the Name field first.
+
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+Mandatory field validation worked as expected. When both fields were blank, validation was triggered on the Name field first.
 
 ---
 
