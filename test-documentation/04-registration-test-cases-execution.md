@@ -621,14 +621,18 @@ The Country dropdown displayed the available options and allowed selection of an
 State should accept valid input and should not allow blank submission if mandatory.
 
 **Actual Result:**  
-NOT EXECUTED
+1. When the State field was left blank, a validation popup displayed "Please fill out this field." and registration was not allowed to proceed.
+2. Valid State data "Maharashtra" was accepted successfully.
+3. Numeric input "12345" was accepted in the State field.
+4. Special-character input "@Maharashtra" was accepted in the State field.
+5. Alphanumeric input "Maharashtra123" was accepted in the State field.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The State field correctly enforced mandatory-field validation. Valid, numeric, special-character, and alphanumeric inputs were accepted. No defect was identified because no explicit requirement restricting the State field to alphabetic characters was available.
 
 ---
 
