@@ -106,14 +106,14 @@ Signup/Login page was accessible and both Login and New User Signup sections wer
 The account should be created successfully.
 
 **Actual Result:**  
-NOT EXECUTED
+Registration was completed successfully using valid user details. The Account Created confirmation page was displayed after clicking Create Account.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+A new account was successfully created with valid registration data. Account Created confirmation was displayed as expected.
 
 ---
 
