@@ -359,14 +359,22 @@ Password mandatory validation worked as expected. The password field masked ente
 DOB controls should display valid selectable values and handle date selection according to the application's validation rules.
 
 **Actual Result:**  
-NOT EXECUTED
+Day dropdown: Options from 1 to 31 were available.
 
-**Status:** NOT EXECUTED
+Month dropdown: All months from January to December were available.
+
+Year dropdown: Options from 1900 to 2021 were available.
+
+Valid DOB: Day 7, September, and Year 2000 were selected successfully and remained displayed.
+
+DOB left blank: Account creation was completed successfully without entering a Date of Birth. No validation message was displayed.
+
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-Boundary behavior will be recorded during execution.
+The Day, Month, and Year dropdowns displayed selectable values and accepted a valid date. Date of Birth was not mandatory because account creation was possible without selecting a DOB. No defect was observed.
 
 ---
 
