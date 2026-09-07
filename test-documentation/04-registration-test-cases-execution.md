@@ -295,14 +295,20 @@ The Email Address field accepted valid email input and correctly prevented blank
 The Title options should be displayed correctly and the application should handle selection according to its validation rules.
 
 **Actual Result:**  
-NOT EXECUTED
+Mr.: Mr. was selected successfully.
 
-**Status:** NOT EXECUTED
+Mrs.: Mrs. was selected successfully, and Mr. was automatically unselected.
+
+Selected option behavior: Clicking the already-selected Title option did not unselect it.
+
+No Title: When neither Mr. nor Mrs. was selected initially, both remained unselected and the application allowed the registration flow to continue without requiring a Title.
+
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+Mr. and Mrs. behave as mutually exclusive radio-button options. A selected option cannot be manually unselected, which is expected radio-button behavior. Title is not mandatory because registration can proceed without selecting either option. No defect was observed.
 
 ---
 
