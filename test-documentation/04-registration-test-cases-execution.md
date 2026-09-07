@@ -170,14 +170,20 @@ Mandatory field validation worked as expected. When both fields were blank, vali
 Invalid email formats should be rejected and appropriate validation should be displayed.
 
 **Actual Result:**  
-NOT EXECUTED
+Test 1 - "test": A validation message displayed, "Please include an @ in the email address. 'test' is missing an @."
 
-**Status:** NOT EXECUTED
+Test 2 - "test@": A validation message displayed, "Please enter a part following @. 'test@' is incomplete."
+
+Test 3 - "test.com": A validation message displayed, "Please include an @ in the email address. 'test.com' is missing an @."
+
+Test 4 - "test@@example.com": A validation message displayed, "A part following @ should not contain the symbol @."
+
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+All four invalid email formats were rejected by the application's email validation. No defect was observed.
 
 ---
 
