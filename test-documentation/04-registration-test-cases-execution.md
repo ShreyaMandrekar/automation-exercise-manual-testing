@@ -505,14 +505,17 @@ The Last Name field correctly enforced the mandatory-field validation. Numeric a
 The application should handle the Company field according to its defined/observed optional behavior.
 
 **Actual Result:**  
-NOT EXECUTED
+1. The Company field was left blank and registration was accepted successfully.
+2. Valid company data "Software" was accepted and the account was created successfully.
+3. Numeric input "12345" was accepted in the Company field and the account was created successfully.
+4. Special-character input "@Software" was accepted in the Company field and the account was created successfully.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The Company field behaved as an optional field. Blank, valid, numeric, and special-character inputs were accepted without preventing registration. No defect was identified.
 
 ---
 
