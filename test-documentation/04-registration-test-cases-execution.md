@@ -71,14 +71,16 @@ Unless otherwise specified:
 Signup/Login page should be displayed with the Login and New User Signup sections.
 
 **Actual Result:**  
-NOT EXECUTED
+Signup/Login page opened successfully. The Login to your account section displayed Email Address, Password, and Login button. The New User Signup section displayed Name, Email Address, and Signup button.
 
-**Status:** NOT EXECUTED
+**Status:**
+PASS
 
-**Defect ID:** N/A
+**Defect ID:** 
+N/A
 
 **Comments:**  
-To be updated during execution.
+Signup/Login page was accessible and both Login and New User Signup sections were displayed as expected.
 
 ---
 
