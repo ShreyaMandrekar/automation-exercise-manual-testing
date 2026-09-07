@@ -592,14 +592,18 @@ The Address 2 field behaved as an optional field. Blank, valid, numeric, special
 Country dropdown should open correctly, display valid options, and allow selection.
 
 **Actual Result:**  
-NOT EXECUTED
+1. India was selected as the default country.
+2. The Country dropdown displayed the following options: India, United States, Canada, Australia, Israel, New Zealand, and Singapore.
+3. When another country was selected, the selected country remained displayed in the dropdown.
+4. Registration was completed successfully with a valid country selected.
+5. The Country field could not be returned to an unselected/blank state because India remained selected by default and there was no blank option.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-Actual available options will be recorded during execution.
+The Country dropdown displayed the available options and allowed selection of another country. India remained selected by default, and there was no option to leave the field unselected. Registration was successful with a selected country. No defect was identified.
 
 ---
 
