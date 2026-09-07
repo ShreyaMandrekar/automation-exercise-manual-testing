@@ -265,14 +265,18 @@ Mandatory Name validation worked as expected. Numeric and special-character inpu
 The application should accept valid email formats and reject blank/invalid email values where validation is required.
 
 **Actual Result:**  
-NOT EXECUTED
+Valid email: The application accepted the valid email address and proceeded to the account information page.
 
-**Status:** NOT EXECUTED
+Blank email: A validation pop-up displayed "Please fill out this field."
+
+Invalid email "QA@": A validation pop-up displayed "Please enter a part following @. 'QA@' is incomplete."
+
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The Email Address field accepted valid email input and correctly prevented blank and invalid email input. No defect was observed.
 
 ---
 
