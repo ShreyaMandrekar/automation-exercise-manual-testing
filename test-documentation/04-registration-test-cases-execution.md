@@ -327,14 +327,18 @@ Mr. and Mrs. behave as mutually exclusive radio-button options. A selected optio
 Password should be treated as a password field. Blank password should be rejected if mandatory. Any password length/format restrictions enforced by the application should work correctly.
 
 **Actual Result:**  
-NOT EXECUTED
+Blank Password: A validation pop-up displayed "Please fill out this field."
 
-**Status:** NOT EXECUTED
+Valid Password "Test@12345": The password was accepted and displayed as masked/dotted characters.
+
+Short Password "123": The application accepted the short password during the previous actual registration and allowed account creation.
+
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-Specific password rules will be documented based on actual application behavior.
+Password mandatory validation worked as expected. The password field masked entered values. A short password was accepted during actual registration; this is recorded as an observation and is not classified as a defect because no explicit minimum password-length requirement was established.
 
 ---
 
