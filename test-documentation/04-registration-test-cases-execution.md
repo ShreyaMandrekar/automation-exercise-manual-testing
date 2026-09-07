@@ -562,14 +562,18 @@ The Address field correctly enforced mandatory-field validation. Valid, numeric,
 The application should allow Address 2 to remain blank if it is optional and should accept valid input when provided.
 
 **Actual Result:**  
-NOT EXECUTED
+1. The Address 2 field was left blank and registration was allowed. The account was created successfully.
+2. Valid address data "Thane 2" was accepted and the account was created successfully.
+3. Numeric input "12345" was accepted in the Address 2 field and the account was created successfully.
+4. Special-character input "@Thane" was accepted in the Address 2 field and the account was created successfully.
+5. Alphanumeric address "456 Station Road" was accepted in the Address 2 field and the account was created successfully.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The Address 2 field behaved as an optional field. Blank, valid, numeric, special-character, and alphanumeric inputs were accepted without preventing registration. No defect was identified.
 
 ---
 
