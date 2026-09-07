@@ -533,14 +533,18 @@ The Company field behaved as an optional field. Blank, valid, numeric, and speci
 Address should accept valid input and should not allow blank submission if the field is mandatory.
 
 **Actual Result:**  
-NOT EXECUTED
+1. When the Address field was left blank, a validation popup displayed "Please fill out this field." and registration was not allowed to proceed.
+2. Valid address data "Thane" was accepted and the account was created successfully.
+3. Numeric input "12345" was accepted in the Address field and the account was created successfully.
+4. Special-character input "@Thane" was accepted in the Address field and the account was created successfully.
+5. Alphanumeric address "123 Main Street" was accepted in the Address field and the account was created successfully.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The Address field correctly enforced mandatory-field validation. Valid, numeric, special-character, and alphanumeric address inputs were accepted. No defect was identified.
 
 ---
 
