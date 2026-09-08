@@ -818,14 +818,16 @@ The Account Created confirmation page displayed the expected heading, confirmati
 The user should be redirected to the Home page.
 
 **Actual Result:**  
-NOT EXECUTED
+1. After clicking the Continue button on the Account Created page, the application redirected to the Home page successfully.
+2. The user remained logged in after being redirected to the Home page.
+3. The logged-in user information was displayed on the Home page.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The Continue button redirected the user to the Home page successfully, and the user's logged-in state was maintained.
 
 ---
 
