@@ -711,14 +711,20 @@ Mandatory-field validation works correctly. However, the Zipcode field accepts p
 Mobile Number should accept valid input according to the application's validation rules and should not allow blank submission if mandatory.
 
 **Actual Result:**  
-NOT EXECUTED
+1. When the Mobile Number field was left blank, a validation popup was displayed and registration was not allowed to proceed.
+2. A valid mobile number was accepted successfully.
+3. Numeric input was accepted in the Mobile Number field.
+4. Alphabetic input was accepted in the Mobile Number field without any validation message.
+5. Alphanumeric input was accepted in the Mobile Number field without any validation message.
+6. Special-character input was accepted in the Mobile Number field without any validation message.
+7. Mobile numbers with different lengths were accepted without any validation message.
 
-**Status:** NOT EXECUTED
+**Status:** FAIL
 
-**Defect ID:** N/A
+**Defect ID:** To be assigned
 
 **Comments:**  
-Character acceptance observed during exploration will be formally verified during execution.
+The Mobile Number field correctly enforced mandatory-field validation. However, it accepted alphabetic, alphanumeric, special-character, and different-length inputs without displaying an appropriate validation message. A defect should be raised for insufficient mobile-number format validation.
 
 ---
 
