@@ -922,14 +922,16 @@ The Delete Account functionality worked as expected and displayed a confirmation
 The account deletion confirmation should be displayed and Continue should redirect the user to the Home page.
 
 **Actual Result:**  
-NOT EXECUTED
+1. The "ACCOUNT DELETED!" heading and account deletion confirmation message were displayed successfully.
+2. After clicking the Continue button, the application redirected to the Home page successfully.
+3. The deleted account was no longer active.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The account deletion confirmation was displayed correctly, and the Continue button successfully redirected the user to the Home page.
 
 ---
 
