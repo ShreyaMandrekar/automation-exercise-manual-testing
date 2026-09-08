@@ -680,14 +680,19 @@ The City field correctly enforced mandatory-field validation. Valid, numeric, sp
 Zipcode should accept valid input according to the application's validation rules and should not allow blank submission if mandatory.
 
 **Actual Result:**  
-NOT EXECUTED
+1. When the Zipcode field was left blank, a validation popup displayed "Please fill out this field." and registration was not allowed to proceed.
+2. A valid numeric zipcode "561302" was accepted successfully.
+3. Numeric input "12345" was accepted in the Zipcode field.
+4. Alphabetic input "ABCDE" was accepted in the Zipcode field without any validation message.
+5. Alphanumeric input "56130A" was accepted in the Zipcode field without any validation message.
+6. Special-character input "@12345" was accepted in the Zipcode field without any validation message.
 
-**Status:** NOT EXECUTED
+**Status:** FAIL
 
-**Defect ID:** N/A
+**Defect ID:** BUG-REG-001
 
 **Comments:**  
-Character acceptance observed during exploration will be formally verified during execution.
+Mandatory-field validation works correctly. However, the Zipcode field accepts potentially invalid postal-code formats, including alphabetic-only, alphanumeric, and special-character inputs, without displaying a validation message. A defect was raised for insufficient zipcode format validation.
 
 ---
 
