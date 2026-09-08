@@ -721,7 +721,7 @@ Mobile Number should accept valid input according to the application's validatio
 
 **Status:** FAIL
 
-**Defect ID:** To be assigned
+**Defect ID:** AEMQ-2
 
 **Comments:**  
 The Mobile Number field correctly enforced mandatory-field validation. However, it accepted alphabetic, alphanumeric, special-character, and different-length inputs without displaying an appropriate validation message. A defect should be raised for insufficient mobile-number format validation.
