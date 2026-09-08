@@ -742,14 +742,18 @@ The Mobile Number field correctly enforced mandatory-field validation. However, 
 Account creation should be prevented and appropriate validation should be displayed for the missing mandatory fields.
 
 **Actual Result:**  
-NOT EXECUTED
+1. When both First Name and Last Name were left blank, registration was blocked. A validation popup was displayed for the First Name field first. After entering the First Name, the validation popup was displayed for the Last Name field.
+2. When Address and State were left blank, registration was blocked and validation was displayed for the missing mandatory fields.
+3. When City and Zipcode were left blank, registration was blocked and validation was displayed for the missing mandatory fields.
+4. When Mobile Number and another mandatory field were left blank, registration was blocked and validation was displayed for the missing mandatory fields.
+5. When several mandatory fields were left blank, the application displayed validation for the first missing mandatory field. After that field was filled and the Create Account button was clicked again, validation moved to the next missing mandatory field. This continued until the required fields were completed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The application correctly prevented registration when mandatory fields were incomplete. When multiple mandatory fields were blank, the application validated the missing fields sequentially, starting with the first applicable missing field. No defect was identified.
 
 ---
 
