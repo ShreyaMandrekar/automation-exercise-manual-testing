@@ -769,14 +769,15 @@ The application correctly prevented registration when mandatory fields were inco
 The account should be created successfully and the Account Created confirmation page should be displayed.
 
 **Actual Result:**  
-NOT EXECUTED
+1. A new account was successfully created using valid data in all required registration fields while leaving the optional fields unselected/unchanged.
+2. After clicking Create Account, the Account Created page was displayed with the congratulations confirmation message.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The application successfully created an account when valid mandatory information was provided. The optional fields did not prevent successful registration. No defect was identified.
 
 ---
 
