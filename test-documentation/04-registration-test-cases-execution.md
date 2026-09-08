@@ -895,14 +895,17 @@ The Logout functionality worked as expected and redirected the user to the Signu
 The account should be deleted and an appropriate account deletion confirmation should be displayed.
 
 **Actual Result:**  
-NOT EXECUTED
+1. After clicking the Delete Account option, the application displayed the Account Deleted confirmation page.
+2. The page displayed the heading "ACCOUNT DELETED!".
+3. A confirmation message stated that the account had been permanently deleted.
+4. The account deletion was completed successfully.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The Delete Account functionality worked as expected and displayed a confirmation that the account was permanently deleted.
 
 ---
 
