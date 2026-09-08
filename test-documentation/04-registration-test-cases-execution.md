@@ -869,14 +869,16 @@ The application correctly displayed the registered user's name after successful 
 The user should be logged out and redirected to the Signup/Login page.
 
 **Actual Result:**  
-NOT EXECUTED
+1. After clicking the Logout option, the application successfully redirected to the Signup/Login page.
+2. The logged-in Home page was no longer displayed.
+3. The user was logged out successfully.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The Logout functionality worked as expected and redirected the user to the Signup/Login page after ending the logged-in session.
 
 ---
 
