@@ -793,14 +793,16 @@ The application successfully created an account when valid mandatory information
 A successful account creation message should be displayed.
 
 **Actual Result:**  
-NOT EXECUTED
+1. The Account Created page displayed the heading "ACCOUNT CREATED!" successfully.
+2. The congratulations/account creation confirmation message was displayed successfully.
+3. The Continue button was displayed on the Account Created page.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The Account Created confirmation page displayed the expected heading, confirmation message, and Continue button successfully.
 
 ---
 
