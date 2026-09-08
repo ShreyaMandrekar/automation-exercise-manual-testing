@@ -650,14 +650,18 @@ The State field correctly enforced mandatory-field validation. Valid, numeric, s
 City should accept valid input and should not allow blank submission if mandatory.
 
 **Actual Result:**  
-NOT EXECUTED
+1. When the City field was left blank, a validation popup displayed "Please fill out this field." and registration was not allowed to proceed.
+2. Valid City data "Kalyan" was accepted successfully.
+3. Numeric input "12345" was accepted in the City field.
+4. Special-character input "@Kalyan" was accepted in the City field.
+5. Alphanumeric input "Kalyan123" was accepted in the City field.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The City field correctly enforced mandatory-field validation. Valid, numeric, special-character, and alphanumeric inputs were accepted. No defect was identified because no explicit requirement restricting the City field to alphabetic characters was available.
 
 ---
 
