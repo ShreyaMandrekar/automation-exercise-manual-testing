@@ -689,10 +689,10 @@ Zipcode should accept valid input according to the application's validation rule
 
 **Status:** FAIL
 
-**Defect ID:** BUG-REG-001
+**Defect ID:** AEMQ-1
 
 **Comments:**  
-Mandatory-field validation works correctly. However, the Zipcode field accepts potentially invalid postal-code formats, including alphabetic-only, alphanumeric, and special-character inputs, without displaying a validation message. A defect was raised for insufficient zipcode format validation.
+Mandatory-field validation works correctly. However, the Zipcode field accepts potentially invalid postal-code formats, including alphabetic-only, alphanumeric, and special-character inputs, without displaying a validation message. A defect was raised in Jira as AEMQ-1 for insufficient zipcode format validation.
 
 ---
 
