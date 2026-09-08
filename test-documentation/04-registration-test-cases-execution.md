@@ -940,14 +940,20 @@ The account deletion confirmation was displayed correctly, and the Continue butt
 | Metric | Result |
 |---|---:|
 | Total Test Cases | 30 |
-| Passed | 0 |
-| Failed | 0 |
+| Passed | 28 |
+| Failed | 2 |
 | Blocked | 0 |
-| Not Executed | 30 |
-| Defects Raised | 0 |
+| Not Executed | 0 |
+| Defects Raised | 2 |
 
-> This summary will be updated after test execution.
+Execution Summary:
 
+A total of 30 registration test cases were executed. 28 test cases passed and 2 test cases failed. No test cases were blocked or left unexecuted.
+
+Two genuine defects were identified during execution and reported in Jira:
+
+- AEMQ-1 – Zipcode field accepts invalid input formats without validation
+- AEMQ-2 – Mobile Number field accepts invalid formats without validation
 ---
 
 ## 6. Execution Status Definitions
@@ -963,31 +969,41 @@ The account deletion confirmation was displayed correctly, and the Continue butt
 
 ## 7. Defect Handling
 
-A defect will be reported only when:
+A defect was reported only when:
 
-1. The test case is actually executed.
-2. The observed behavior differs from the expected behavior.
-3. The issue can be reproduced or sufficiently evidenced.
-4. The issue is documented with appropriate details.
+- The test case was actually executed.
+- The observed behavior differed from the expected result.
+- The issue was reproducible.
+- The issue was documented with appropriate details.
+- A Jira defect was created and linked to the relevant test case.
 
-Defect IDs will be added to the relevant test cases after defects are genuinely identified.
+Defects identified during registration testing:
+
+| Defect ID | Related Test Case | Summary | Severity | Priority |
+|---|---|---|---|---|
+| AEMQ-1 | TC-REG-021 | Zipcode field accepts invalid input formats without validation | Medium | Medium |
+| AEMQ-2 | TC-REG-022 | Mobile Number field accepts invalid formats without validation | Medium | Medium |
 
 Detailed defect reports will be maintained in:
 
-`05-defect-reports.md`
+05-defect-reports.md
 
 ---
 
 ## 8. Retesting and Regression
 
+The failed test cases TC-REG-021 and TC-REG-022 resulted in defects AEMQ-1 and AEMQ-2.
+
+The defects are currently documented in Jira and have not yet been fixed or retested.
+
 After a genuine defect is fixed:
 
 - The failed test case will be executed again for retesting.
-- The result will be updated in this document.
+- The test result will be updated in this document.
 - Related functionality will be tested for regression.
-- Retesting and regression details will be maintained in:
+- Retesting and regression results will be documented in:
 
-`06-retesting-regression.md`
+06-retesting-regression.md
 
 ---
 
@@ -1021,15 +1037,12 @@ The following data was used during exploratory testing and may be reused where a
 
 ## 10. Execution Environment
 
-The following information will be recorded during actual execution:
-
 | Field | Details |
 |---|---|
 | Application URL | https://www.automationexercise.com/ |
-| Browser | To be recorded |
-| Browser Version | To be recorded |
-| Operating System | To be recorded |
-| Execution Date | To be recorded |
+| Browser | Google Chrome 152.0.7977.82 |
+| Operating System | Windows 11 Home Single Language, Version 25H2 (OS Build 26200.9278) |
+| Execution Period | August–September 2026 |
 
 ---
 
@@ -1058,8 +1071,14 @@ The following information will be recorded during actual execution:
 
 ## 12. Notes
 
-- Test cases are derived from application functionality, exploratory observations, documented application behavior, and standard QA practices.
-- Official Automation Exercise test cases are not copied as project test cases.
-- Expected results will be validated during execution.
-- Exploratory observations are not automatically treated as defects.
-- No defect will be added unless it is actually reproduced during testing.
+Test cases are derived from application functionality, exploratory observations, documented application behavior, and standard QA practices.
+
+Official Automation Exercise test cases are not copied as project test cases.
+
+Expected results were validated during actual execution.
+
+Exploratory observations were not automatically treated as defects.
+
+Two defects were reported only after the relevant behaviors were reproduced during actual execution.
+
+No defect was reported solely based on assumptions or observations without validation.
