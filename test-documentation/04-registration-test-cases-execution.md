@@ -844,14 +844,16 @@ The Continue button redirected the user to the Home page successfully, and the u
 The newly registered user's name should be displayed as a logged-in user.
 
 **Actual Result:**  
-NOT EXECUTED
+1. The logged-in user information was displayed at the top of the Home page.
+2. The displayed user name matched the name used during registration.
+3. The user remained logged in after navigating to the Home page.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**  
-To be updated during execution.
+The application correctly displayed the registered user's name after successful registration and maintained the logged-in state.
 
 ---
 
