@@ -196,3 +196,92 @@ The exploration identified the available registration fields, input controls, ma
 
 Formal test scenarios and detailed test cases will be created after completing the exploratory phase.
 
+---
+
+# Login / Logout – Exploratory Observations
+
+## Login Page
+
+The Login section is available through the Signup/Login page.
+
+The Login form contains:
+
+* Email Address field
+* Password field
+* Login button
+
+## Valid Login
+
+* A registered email address and the corresponding correct password were entered.
+* Clicking the Login button successfully redirected to the Home page.
+* The logged-in user's name was displayed on the Home page.
+
+## Invalid Credentials
+
+* An incorrect email address with a password displayed:
+  `Your email or password is incorrect.`
+* A correct registered email address with an incorrect password displayed the same message:
+  `Your email or password is incorrect.`
+* An unregistered email address also displayed:
+  `Your email or password is incorrect.`
+* The application therefore uses the same error message for different invalid-credential combinations.
+
+## Email Format Validation
+
+The Login email field performs browser-level email validation.
+
+Observed behavior:
+
+* Entering `test` displayed:
+  `Please include an @ in the email address. 'test' is missing an '@'.`
+* Entering `test@` displayed:
+  `Please enter a part following '@'. 'test@' is incomplete.`
+* An email containing a space in the middle was rejected with:
+  `The part followed by @ should not contain the symbol ' '.`
+* Entering only spaces in the email field did not allow login and displayed a validation message.
+
+## Mandatory Field Validation
+
+* When both Email Address and Password fields were blank and Login was clicked, validation was first displayed for the Email Address field:
+  `Please fill out this field.`
+* After entering a valid email address while leaving Password blank, clicking Login displayed:
+  `Please fill out this field.`
+  for the Password field.
+* Validation therefore occurs sequentially, with the first missing mandatory field being validated before the next missing field.
+
+## Password Behavior
+
+* Entered password characters are masked and displayed as dots.
+* No eye/show-password icon was available.
+* The password could not be viewed in plain text through the Login form.
+
+## Logout and Re-login
+
+* After successful login, selecting Logout redirected the user to the Signup/Login page.
+* After logout, the user could log in again using valid credentials.
+* A subsequent successful login again redirected to the Home page and displayed the logged-in user's name.
+
+## Browser Back Button After Logout
+
+* After logging out and being redirected to the Signup/Login page, pressing the browser Back button did not restore the logged-in session.
+* The application remained in a logged-out state.
+* The logged-in user's authenticated state was not restored through browser navigation.
+
+## Email Case Behavior
+
+* A registered email address entered using uppercase characters with the correct password was rejected.
+* The application displayed:
+  `Your email or password is incorrect.`
+* This behavior was recorded as an observation and not classified as a defect because no explicit requirement was available stating that email addresses must be treated as case-insensitive.
+
+## Leading and Trailing Spaces
+
+* An email address entered with leading and/or trailing spaces was accepted.
+* Login was successful and the user was redirected to the Home page.
+* This behavior was recorded as an observation. No defect was raised because the observed behavior did not prevent successful authentication and no explicit requirement was available defining how surrounding whitespace must be handled.
+
+## Exploratory Testing Conclusion
+
+The Login functionality was explored across successful authentication, invalid credentials, email-format validation, mandatory-field validation, password masking, logout/re-login, browser navigation after logout, email case handling, and whitespace handling.
+
+The observations from this exploration will be used as input for designing the formal Login test scenarios and test cases.
