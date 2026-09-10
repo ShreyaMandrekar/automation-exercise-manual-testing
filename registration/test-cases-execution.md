@@ -9,7 +9,7 @@
 | Testing Type | Manual Testing |
 | Test Level | System Testing |
 | Test Approach | Functional, Positive, Negative, Validation |
-| Test Case Status | Not Executed |
+| Test Case Status |    Executed |
 | Tester | Shreya Mandrekar |
 
 ---
