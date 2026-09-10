@@ -361,12 +361,13 @@ A valid registered email address was entered while the Password field was left b
 The application should prevent login and display mandatory-field validation for the Email Address field.
 
 **Actual Result:**
+The Email Address field was left blank while a password was entered. On clicking Login, a browser validation popup displayed `Please fill out this field.` on the Email Address field, and login was not allowed.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** Email Address mandatory-field validation works correctly.
 
 ---
 
