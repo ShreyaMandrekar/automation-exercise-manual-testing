@@ -137,12 +137,13 @@ Email Address, Password, and Login button were visible. The Email Address and Pa
 The user should be successfully authenticated and the login attempt should complete without an authentication error.
 
 **Actual Result:**
+Valid registered email address and correct password were accepted successfully. The user was logged in and redirected to the Home page.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
-
-**Comments:**
+**Defect ID:** N/A
+ 
+**Comments:** Login with valid registered credentials completed successfully.
 
 ---
 
