@@ -616,12 +616,13 @@ Clicking Logout redirected the user to the Signup / Login page. The logged-in us
 The user should be able to log in successfully again after logout.
 
 **Actual Result:**
+ After logging out, the user was able to log in again successfully using the registered email address and correct password. The Home page was displayed with `Logged in as QA Tester`.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** User can successfully authenticate again after logout.
 
 ---
 
