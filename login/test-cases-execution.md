@@ -233,12 +233,13 @@ Correct registered email address with an incorrect password was rejected. The me
 The login attempt should be rejected and an appropriate authentication error message should be displayed.
 
 **Actual Result:**
+Incorrect email address with an incorrect password was rejected. The message `Your email or password is incorrect.` was displayed in red below the Password field, and the user was not logged in.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
-
-**Comments:**
+**Defect ID:** N/A
+ 
+**Comments:** Application correctly prevents login when both email address and password are incorrect.
 
 ---
 
