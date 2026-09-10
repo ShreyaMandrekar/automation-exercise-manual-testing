@@ -457,12 +457,13 @@ The application should reject the incomplete email format and display appropriat
 The application should reject an email address containing an invalid internal space and provide appropriate validation.
 
 **Actual Result:**
+ The email address `test user@example.com` was entered with a password. On clicking Login, a browser validation popup appeared on the Email Address field stating `The part followed by @ should not contain the symbol ' '.` Login was not allowed.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** Application correctly rejects an email address containing an internal space.
 
 ---
 
