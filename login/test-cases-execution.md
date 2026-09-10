@@ -72,12 +72,13 @@ Unless otherwise specified:
 The Signup/Login page should be displayed successfully with the Login section available.
 
 **Actual Result:**
+Signup / Login page opened successfully and the Login section loaded correctly. The Login form was visible.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** Login page is accessible and loads correctly.
 
 ---
 
