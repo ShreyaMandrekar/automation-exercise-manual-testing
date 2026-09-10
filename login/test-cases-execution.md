@@ -265,12 +265,13 @@ Incorrect email address with an incorrect password was rejected. The message `Yo
 The application should reject the login attempt and display an appropriate authentication error message.
 
 **Actual Result:**
+An unregistered email address with an unregistered password was rejected. The message `Your email or password is incorrect.` was displayed in red below the Password field, and the user was not logged in.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** Application correctly prevents login with unregistered credentials.
 
 ---
 
