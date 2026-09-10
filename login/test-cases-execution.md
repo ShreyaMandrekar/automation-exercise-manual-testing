@@ -552,12 +552,13 @@ After entering valid registered credentials and clicking Login, the application 
 The logged-in user's name should be displayed correctly after successful authentication.
 
 **Actual Result:**
+After successful login, `Logged in as QA Tester` was displayed on the Home page. The `Logout` and `Delete Account` options were also visible.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** The logged-in user's name is displayed correctly after authentication.
 
 ---
 
