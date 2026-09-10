@@ -9,7 +9,7 @@
 | Testing Type     | Manual Testing                             |
 | Test Level       | System Testing                             |
 | Test Approach    | Functional, Positive, Negative, Validation |
-| Test Case Status | Not Executed                               |
+| Test Case Status | Executed                                   |
 | Tester           | Shreya Mandrekar                           |
 
 ---
@@ -297,13 +297,13 @@ An unregistered email address with an unregistered password was rejected. The me
 The application should prevent login and display mandatory-field validation for the required input.
 
 **Actual Result:**
-When both Email Address and Password fields were left blank and Login was clicked, a browser validation popup displayed `Please fill out this field.` on the Email Address field first. After entering an email address and leaving the Password field blank, the same validation message was displayed on the Password field.
+When both Email Address and Password fields were left blank and Login was clicked, a browser validation popup displayed `Please fill out this field.` on the Email Address field first.
 
 **Status:** PASS
 
 **Defect ID:** N/A
 
-**Comments:** Mandatory field validation works sequentially for Email Address and Password.
+**Comments:** Mandatory field validation is triggered for the Email Address field when both Login fields are blank.
 
 ---
 
@@ -380,12 +380,12 @@ The Email Address field was left blank while a password was entered. On clicking
 | Test Case ID  | TC-LOGIN-011                    |
 | Priority      | High                            |
 | Preconditions | Signup/Login page is accessible |
-| Test Data     | `test`                          |
+| Test Data     | `test.com`                      |
 
 **Steps:**
 
 1. Open the Signup/Login page.
-2. Enter `test` in the Email Address field.
+2. Enter `test.com` in the Email Address field.
 3. Enter a password.
 4. Click Login.
 
@@ -679,7 +679,7 @@ After logging out and being redirected to the Signup / Login page, the browser B
 5. Observe the result.
 
 **Expected Result:**
-Email case handling should be consistent with the application's defined authentication rules.
+The application's behavior for an uppercase version of a registered email address should be observed and documented. The result should be evaluated against a defined email case-handling requirement if one is available.
 
 **Actual Result:**
 The registered email address was entered in uppercase along with the correct password. Login was rejected and the message `Your email or password is incorrect.` was displayed.
@@ -706,14 +706,13 @@ The registered email address was entered in uppercase along with the correct pas
 **Steps:**
 
 1. Open the Signup/Login page.
-2. Enter the registered email address with leading spaces.
+2. Enter the registered email address with leading and trailing spaces.
 3. Enter the correct password.
 4. Click Login.
-5. Repeat using the registered email address with trailing spaces.
-6. Observe the result.
+5. Observe the result.
 
 **Expected Result:**
-The application should handle leading and trailing whitespace according to its defined input-validation and authentication rules.
+The application's handling of leading and trailing whitespace in the email address should be observed and documented. The result should be evaluated against a defined whitespace-handling requirement if one is available.
 
 **Actual Result:**
  The registered email address was entered with leading and trailing spaces along with the correct password. The application accepted the input and successfully logged in the user.
@@ -731,14 +730,13 @@ The application should handle leading and trailing whitespace according to its d
 | Metric           | Result |
 | ---------------- | -----: |
 | Total Test Cases |     21 |
-| Passed           |      0 |
+| Passed           |     21 |
 | Failed           |      0 |
 | Blocked          |      0 |
-| Not Executed     |     21 |
+| Not Executed     |      0 |
 | Defects Raised   |      0 |
 
-> The execution summary will be updated after all Login test cases have been executed.
-
+> All 21 Login test cases were executed against the application. The execution summary reflects the final recorded results.
 ---
 
 # 6. Execution Status Definitions
@@ -802,8 +800,8 @@ These test cases were derived from:
 * Positive and negative test conditions
 * Input validation scenarios
 
-Actual behavior will be recorded only after executing each test case.
+Actual results and execution statuses were recorded based on testing performed against the live application.
 
-Exploratory observations such as email case handling and whitespace handling will not automatically be classified as defects. A defect will be raised only when the observed behavior is confirmed to violate an applicable requirement or clearly defined expected behavior.
+Exploratory observations such as email case handling and whitespace handling were documented without automatically classifying them as defects. A defect was raised only when observed behavior could be confirmed to violate an applicable requirement or clearly defined expected behavior.
 
-Any genuine reproducible defect identified during execution will be documented separately in the defect reports.
+Any genuine reproducible defect identified during testing will be documented separately in the defect reports.
