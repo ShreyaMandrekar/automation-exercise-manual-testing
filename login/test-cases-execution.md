@@ -716,12 +716,13 @@ The registered email address was entered in uppercase along with the correct pas
 The application should handle leading and trailing whitespace according to its defined input-validation and authentication rules.
 
 **Actual Result:**
+ The registered email address was entered with leading and trailing spaces along with the correct password. The application accepted the input and successfully logged in the user.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:**  Leading and trailing spaces around the email address did not prevent successful login. No defect was raised because no specific requirement was established for rejecting or trimming surrounding whitespace.
 
 ---
 
