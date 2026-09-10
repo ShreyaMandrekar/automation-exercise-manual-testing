@@ -521,12 +521,13 @@ The entered password should be displayed in masked form rather than plain text.
 After successful authentication, the application should redirect the user to the appropriate logged-in page.
 
 **Actual Result:**
+After entering valid registered credentials and clicking Login, the application successfully redirected to the Home page. The logged-in user's name was displayed on the Home page.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** Successful login redirects the user to the Home page.
 
 ---
 
