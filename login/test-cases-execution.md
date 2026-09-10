@@ -329,12 +329,13 @@ When both Email Address and Password fields were left blank and Login was clicke
 The application should prevent login and display mandatory-field validation for the Password field.
 
 **Actual Result:**
+A valid registered email address was entered while the Password field was left blank. On clicking Login, a browser validation popup displayed `Please fill out this field.` and login was not allowed.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** Password mandatory-field validation works correctly.
 
 ---
 
