@@ -649,12 +649,13 @@ The user should be able to log in successfully again after logout.
 Browser Back navigation after logout should not restore the authenticated session.
 
 **Actual Result:**
+After logging out and being redirected to the Signup / Login page, the browser Back button was pressed. The logged-in state was not restored, and the user remained completely logged out. The logged-in user's name was not displayed.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** Browser Back navigation does not restore the authenticated session after logout.
 
 ---
 
