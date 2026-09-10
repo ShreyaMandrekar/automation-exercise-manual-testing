@@ -425,12 +425,13 @@ The email address `test.com` was entered with a password. On clicking Login, a b
 The application should reject the incomplete email format and display appropriate email validation.
 
 **Actual Result:**
+ The email address `test@` was entered with a password. On clicking Login, a browser validation popup appeared on the Email Address field stating `Please enter a part following '@'. 'test@' is incomplete.` Login was not allowed.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:**  Application correctly validates an incomplete email address ending with `@`.
 
 ---
 
