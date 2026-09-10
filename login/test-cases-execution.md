@@ -583,12 +583,13 @@ After successful login, `Logged in as QA Tester` was displayed on the Home page.
 The user should be logged out successfully and redirected to the Signup/Login page or appropriate logged-out state.
 
 **Actual Result:**
+Clicking Logout redirected the user to the Signup / Login page. The logged-in user's name was no longer displayed, indicating that the user was signed out.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** Logout successfully terminates the logged-in session and redirects the user to the Signup / Login page.
 
 ---
 
