@@ -104,13 +104,14 @@ Signup / Login page opened successfully and the Login section loaded correctly. 
 **Expected Result:**
 The Login section should contain Email Address, Password, and Login button, and the controls should be available for interaction.
 
-**Actual Result:**
+**Actual Result:** 
+Email Address, Password, and Login button were visible. The Email Address and Password fields were clickable and allowed text input.
 
-**Status:**
+**Status:** PASS 
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** All required Login form elements are present and usable.
 
 ---
 
