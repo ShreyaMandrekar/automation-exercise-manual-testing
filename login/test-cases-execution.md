@@ -682,12 +682,13 @@ After logging out and being redirected to the Signup / Login page, the browser B
 Email case handling should be consistent with the application's defined authentication rules.
 
 **Actual Result:**
+The registered email address was entered in uppercase along with the correct password. Login was rejected and the message `Your email or password is incorrect.` was displayed.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** Application treats the uppercase version of the registered email as invalid. No defect is raised because case-insensitive email login is not an established requirement for this test.
 
 ---
 
