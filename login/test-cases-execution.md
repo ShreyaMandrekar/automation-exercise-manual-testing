@@ -393,12 +393,13 @@ The Email Address field was left blank while a password was entered. On clicking
 The application should reject the invalid email format and display appropriate email validation.
 
 **Actual Result:**
+The email address `test.com` was entered with a password. On clicking Login, a browser validation popup appeared on the Email Address field stating `Please include an @ in the email address. 'test.com' is missing an '@'.` Login was not allowed.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** Application correctly validates an email address that does not contain `@`.
 
 ---
 
