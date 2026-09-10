@@ -297,12 +297,13 @@ An unregistered email address with an unregistered password was rejected. The me
 The application should prevent login and display mandatory-field validation for the required input.
 
 **Actual Result:**
+When both Email Address and Password fields were left blank and Login was clicked, a browser validation popup displayed `Please fill out this field.` on the Email Address field first. After entering an email address and leaving the Password field blank, the same validation message was displayed on the Password field.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** Mandatory field validation works sequentially for Email Address and Password.
 
 ---
 
