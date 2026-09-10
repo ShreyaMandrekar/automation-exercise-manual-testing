@@ -489,12 +489,13 @@ The application should reject an email address containing an invalid internal sp
 The entered password should be displayed in masked form rather than plain text.
 
 **Actual Result:**
+ The password entered in the Password field was displayed in masked/dotted form. The password characters were not visible in plain text. No Show Password/Eye icon was available in the Password field.
 
-**Status:**
+**Status:** PASS
 
-**Defect ID:**
+**Defect ID:** N/A
 
-**Comments:**
+**Comments:** Password is correctly masked during entry.
 
 ---
 
