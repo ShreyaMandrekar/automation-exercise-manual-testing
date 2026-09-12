@@ -285,3 +285,220 @@ Observed behavior:
 The Login functionality was explored across successful authentication, invalid credentials, email-format validation, mandatory-field validation, password masking, logout/re-login, browser navigation after logout, email case handling, and whitespace handling.
 
 The observations from this exploration will be used as input for designing the formal Login test scenarios and test cases.
+
+---
+
+# Products – Exploratory Observations
+
+## Products Page
+
+The Products section is accessible from the main navigation of the Automation Exercise application.
+
+The Products page contains:
+
+* A promotional banner displaying **“Special Offer / Big Sale / Up to 50% Off”**
+* Search Product field
+* Product listings
+* Product cards with product image, price, Add to Cart and View Product options
+* Product Categories section
+* Brands section
+
+The promotional banner was visible during exploration but was not clickable.
+
+## Product Cards
+
+Each product card displayed:
+
+* Product image
+* Product price
+* Add to Cart option
+* View Product option
+
+When hovering over a product card, an orange overlay appeared containing product information and an Add to Cart option.
+
+## Product Search
+
+The Search Product field was used to explore product search behavior.
+
+Observed behavior:
+
+* Searching for `tops` displayed matching top-related products.
+* Searching for `top` displayed the same set of products observed for `tops`.
+* Searching for `sare` displayed saree-related products.
+* Searching for `tshirt` displayed T-shirt-related products.
+* Searching for `jeans` displayed jeans-related products.
+* The entered search text remained visible in the search field after the search was performed.
+* When a search was performed, the page heading changed from **“All Products”** to **“Search Products”**.
+* Only products matching the search term were displayed.
+* The Categories and Brands sections remained visible while displaying search results.
+* Searching for a non-existing product resulted in a blank product area. No explicit “No products found” or similar message was displayed.
+* Performing a blank search refreshed the page and displayed the available products again.
+
+These search behaviors were recorded as observations and were not classified as defects because no explicit requirement for search-result messaging or search matching behavior was available.
+
+## Product Categories
+
+The Categories section is available on the left side of the Products page.
+
+The main categories observed were:
+
+* Women
+* Men
+* Kids
+
+### Women Category
+
+Expanding the Women category displayed:
+
+* Dress
+* Tops
+* Saree
+
+Selecting a Women subcategory displayed products related to that subcategory.
+
+For example, selecting **Dress** displayed dress-related products and changed the page heading to **“Women Dress Product”**.
+
+### Men Category
+
+Expanding the Men category displayed:
+
+* T-shirt
+* Jeans
+
+Selecting a Men subcategory displayed products related to the selected category.
+
+For example, selecting **Jeans** displayed jeans-related products and changed the product listing accordingly.
+
+### Kids Category
+
+Expanding the Kids category displayed:
+
+* Dress
+* Tops & Shirts
+
+Selecting a Kids subcategory displayed products related to the selected category.
+
+Category selection successfully changed the displayed products and the corresponding page heading.
+
+## Brands
+
+The Brands section is available on the left side of the Products page.
+
+The following brands were observed:
+
+1. Polo
+2. H&M
+3. Madame
+4. Mast & Harbour
+5. Babyhug
+6. Allen Solly Junior
+7. Kookie Kids
+8. Biba
+
+The number of products available for a brand was displayed in parentheses beside the brand name.
+
+Selecting a brand filtered the product listing to products associated with that brand.
+
+For example, selecting **Polo**:
+
+* Changed the page heading to **“Brand Polo Product”**
+* Displayed products associated with the Polo brand
+* Displayed products across applicable product categories
+
+## Product Details
+
+Selecting **View Product** opened the product detail page.
+
+The product detail page displayed:
+
+* Product image
+* Product name
+* Category
+* Price
+* Rating
+* Quantity
+* Add to Cart button
+* Availability
+* Condition
+* Brand
+* Write Your Review section
+
+The review section contained:
+
+* Name
+* Email
+* Review
+* Submit button
+
+## Product Quantity
+
+The quantity control was explored on the product detail page.
+
+Observed behavior:
+
+* The default quantity was displayed.
+* The quantity could be increased during exploration.
+* The quantity control did not allow the quantity to be reduced below its minimum value during the observed interaction.
+
+The exact boundary behavior should be covered through formal test cases.
+
+## Add to Cart
+
+The Add to Cart functionality was tested from the product detail page.
+
+Observed behavior:
+
+1. A product was opened using View Product.
+2. The quantity was selected.
+3. Add to Cart was clicked.
+4. A confirmation popup appeared indicating that the product had been added to the cart.
+5. A **Continue Shopping** button was available.
+6. A **View Cart** link was available.
+7. Selecting View Cart opened the Cart page.
+8. The added product was displayed in the cart with the selected quantity.
+9. Product information including condition and brand was visible in the cart.
+
+## Product Review
+
+The Write Your Review section was explored using different input combinations.
+
+Observed validation behavior:
+
+* Submitting the form with all fields blank displayed the browser validation message:
+  `Please fill out this field.`
+* After entering a Name while leaving Email blank, submitting the form displayed the same mandatory-field validation for the Email field.
+* Entering an invalid email address without `@` triggered browser-level email validation.
+* After entering a valid email while leaving the Review field blank, submitting the form displayed mandatory-field validation for the Review field.
+* After entering valid Name, Email and Review values, submitting the review displayed the green confirmation message:
+  **“Thank you for your review”**
+
+The review form therefore performs mandatory-field and email-format validation during the observed interaction.
+
+## Observations Requiring Further Formal Testing
+
+The following behaviors were observed during exploratory testing and should be investigated more systematically during formal test execution:
+
+* Search matching behavior for different search terms and partial terms.
+* Behavior when no products match a search.
+* Behavior of a blank search.
+* Category filtering for Women, Men and Kids.
+* Brand filtering and product count displayed beside brands.
+* Product quantity increase and minimum quantity behavior.
+* Cart quantity consistency after adding a product.
+* Product information displayed in the cart.
+* Product review mandatory-field validation.
+* Product review email-format validation.
+* Successful review submission.
+
+These observations are **not automatically classified as defects**. They should be compared with expected requirements or application behavior during formal test execution before raising any defect.
+
+## Exploratory Testing Conclusion
+
+The Products module was explored across:
+
+**Products Page → Search → Categories → Brands → Product Details → Quantity → Add to Cart → Cart → Product Review**
+
+The exploration identified the main product listing components, search behavior, category and brand filtering, product detail information, quantity behavior, Add to Cart flow, and product review validation.
+
+The observations from this exploration will be used as input for designing the formal Products test scenarios and detailed test cases.
+
