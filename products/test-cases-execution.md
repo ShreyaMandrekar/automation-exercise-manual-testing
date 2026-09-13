@@ -110,14 +110,14 @@ Products page loaded successfully with the expected product listing and main pro
 The Products page should display the available product-related UI elements correctly and they should be accessible for interaction where applicable.
 
 **Actual Result:**
-*To be updated during execution.*
+Product cards were displayed on the Products page with the product image, product name, price, Add to Cart button, and View Product option. On hovering over a product card, an orange overlay appeared and highlighted the product information and Add to Cart option. Both Add to Cart and View Product were functioning correctly. No abnormal behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Product card information, hover behavior, and available product actions worked as expected during execution.
 
 ---
 
