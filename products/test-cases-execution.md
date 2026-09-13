@@ -75,14 +75,14 @@ Unless otherwise specified:
 The Products page should open successfully and display the available product-related sections and product listings.
 
 **Actual Result:**
-*To be updated during execution.*
+The Products section was opened successfully. All products were loaded, and the “All Products” heading was displayed. The Search Product field, Categories section, and Brands section were also visible.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Products page loaded successfully with the expected product listing and main product-related UI sections.
 
 ---
 
