@@ -482,14 +482,14 @@ The search heading and search field behaved as expected during a valid product s
 The selected Women subcategory should display relevant products and the product listing should update appropriately.
 
 **Actual Result:**
-*To be updated during execution.*
+Under Categories, selected Women and clicked Dress. The page heading changed to “Women Dress Product” and the available dress products were displayed. The Categories and Brands sections remained visible. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Women → Dress category filtering displayed the expected dress products and heading.
 
 ---
 
