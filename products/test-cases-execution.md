@@ -964,14 +964,14 @@ The View Cart option redirected to the Cart page successfully and displayed the 
 The Cart should display the added product with the same quantity selected before adding it to the cart.
 
 **Actual Result:**
-*To be updated during execution.*
+The Cart page did not provide an option to directly increase or decrease the product quantity. The quantity could be changed from the product details page before adding the product to the cart. When the same product was added to the cart again, its quantity was added to the existing cart quantity. For example, when the product already had a quantity of 2 in the cart and the same product was added again with quantity 2, the final cart quantity became 4.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-Record the selected quantity and displayed Cart quantity.
+The Cart page does not provide direct quantity controls. However, adding the same product again correctly increased the existing cart quantity.
 
 ---
 
