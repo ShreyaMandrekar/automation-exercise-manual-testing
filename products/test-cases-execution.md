@@ -831,14 +831,14 @@ Product quantity increased correctly using the quantity control, while the selec
 The quantity control should not allow the user to set a quantity below the minimum supported value.
 
 **Actual Result:**
-*To be updated during execution.*
+The quantity was decreased using the down arrow until it reached 1. Clicking the down arrow again did not reduce the quantity further. The quantity did not become 0 or a negative value, and no error message was displayed. 1 remained the minimum quantity.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-Record the minimum quantity and the behavior of the decrease control.
+The quantity control correctly maintained 1 as the minimum value and prevented further decrease.
 
 ---
 
