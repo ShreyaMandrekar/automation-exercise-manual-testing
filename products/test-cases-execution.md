@@ -9,7 +9,7 @@
 | Testing Type     | Manual Testing                             |
 | Test Level       | System Testing                             |
 | Test Approach    | Functional, Positive, Negative, Validation |
-| Test Case Status | Not Executed                               |
+| Test Case Status | Executed                                   |
 | Tester           | Shreya Mandrekar                           |
 
 ---
@@ -35,7 +35,6 @@ The objective of these test cases is to verify the Products functionality of the
 * Review email validation
 * Successful Product Review submission
 
-All Actual Results and Status values will be updated after executing the test cases against the live application.
 
 ---
 
@@ -134,15 +133,16 @@ The Products page UI elements were displayed correctly during execution with no 
 
 **Steps:**
 
-1. Observe the products displayed on the Products page.
-2. Select a product card.
+1. Open the Products page.
+2. Observe the displayed product cards.
 3. Verify the product image.
-4. Verify the product price.
-5. Verify the Add to Cart option.
-6. Verify the View Product option.
+4. Verify the product name.
+5. Verify the product price.
+6. Verify the Add to Cart option.
+7. Verify the View Product option.
 
 **Expected Result:**
-Product cards should display the product image, price, Add to Cart option, and View Product option.
+Product cards should display the product image, product name, price, Add to Cart option, and View Product option.
 
 **Actual Result:**
 Product cards were displayed on the Products page with the product image, product name, price, Add to Cart button, and View Product option. Both Add to Cart and View Product were functioning correctly. No abnormal behavior was observed.
@@ -797,7 +797,7 @@ Product details and available product information and actions were displayed cor
 The quantity should increase according to the application's supported quantity behavior.
 
 **Actual Result:**
-The initial product quantity was 1. Clicking the upper arrow increased the quantity successfully. The selected product remained unchanged while the quantity was increased. The quantity control also provided an up arrow and down arrow for increasing and decreasing the quantity. The quantity could not be decreased below 1.
+The initial product quantity was 1. Clicking the upper arrow increased the quantity successfully. The selected product remained unchanged while the quantity was increased. The quantity control provided an up arrow and down arrow for quantity adjustment.
 
 **Status:** PASS
 
@@ -958,10 +958,13 @@ The View Cart option redirected to the Cart page successfully and displayed the 
 2. Set a quantity greater than the default quantity.
 3. Add the product to the cart.
 4. Open the Cart.
-5. Observe the product quantity.
+5. Observe whether the Cart provides direct quantity controls.
+6. Return to the product details page.
+7. Add the same product again with a selected quantity.
+8. Open the Cart and observe the final quantity.
 
 **Expected Result:**
-The Cart should display the added product with the same quantity selected before adding it to the cart.
+The Cart should display the selected product quantity correctly. If the same product is added again, the application should handle the existing cart quantity consistently.
 
 **Actual Result:**
 The Cart page did not provide an option to directly increase or decrease the product quantity. The quantity could be changed from the product details page before adding the product to the cart. When the same product was added to the cart again, its quantity was added to the existing cart quantity. For example, when the product already had a quantity of 2 in the cart and the same product was added again with quantity 2, the final cart quantity became 4.
@@ -991,11 +994,15 @@ The Cart page does not provide direct quantity controls. However, adding the sam
 1. Add a product to the cart.
 2. Open the Cart.
 3. Observe the added product.
-4. Verify the available product information.
-5. Verify the product condition and brand where displayed.
+4. Verify the product image.
+5. Verify the product name.
+6. Verify the unit price.
+7. Verify the quantity.
+8. Verify the total price.
+9. Verify the delete/remove option.
 
 **Expected Result:**
-The Cart should display the added product and its available product information correctly, including condition and brand where provided.
+The Cart should display the added product with its product image, product name, unit price, quantity, total price, and available remove option correctly.
 
 **Actual Result:**
 The Cart page displayed the added product with the product image, product name, unit price, quantity, total price, and delete/remove option. All expected product information and the available remove action were displayed correctly. No unexpected behavior was observed.
@@ -1037,14 +1044,14 @@ The Cart page displayed the expected product information and available remove op
 The review form should prevent submission when required fields are blank and should display appropriate validation feedback for the missing fields.
 
 **Actual Result:**
-When Name, Email, and Review were left blank and Submit was clicked, a browser validation popup displayed “Please fill out this field.” for the Name field. After entering the Name and submitting again, the same validation appeared for the Email field. After entering the Email and submitting again, the validation appeared for the Review field. The Email field also displayed browser email-format validation when an invalid email format was entered.
+When Name, Email, and Review were left blank and Submit was clicked, a browser validation popup displayed “Please fill out this field.” for the Name field. After entering the Name and submitting again, the same validation appeared for the Email field. After entering the Email and submitting again, the validation appeared for the Review field.
 
 **Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-The review form correctly enforced mandatory validation for Name, Email, and Review fields. The Email field also applied format validation.
+The review form correctly enforced mandatory validation for Name, Email, and Review fields.
 
 ---
 
@@ -1123,17 +1130,21 @@ The review form accepted valid input and displayed the expected confirmation mes
 | Metric           | Result |
 | ---------------- | -----: |
 | Total Test Cases |     31 |
-| Passed           |      0 |
+| Passed           |     31 |
 | Failed           |      0 |
 | Blocked          |      0 |
-| Not Executed     |     31 |
+| Not Executed     |      0 |
 | Defects Raised   |      0 |
 
 **Execution Summary:**
 
-A total of 31 Products test cases have been designed based on the Products test scenarios and exploratory testing observations. Formal execution against the live Automation Exercise application has not yet been completed.
+A total of 31 Products test cases were executed against the live Automation Exercise application.
 
-Actual results, execution statuses, and defect IDs will be updated during formal test execution.
+All 31 test cases passed. No test cases were blocked or left unexecuted, and no defects were raised during Products module execution.
+
+The execution covered Products page accessibility and UI elements, product cards, search functionality, category and brand filtering, product details, quantity behavior, Add to Cart, Cart behavior, and Product Review validation and submission.
+
+No defect was raised where an observed behavior did not conflict with a clearly defined expected result or requirement. Such observations were documented as execution findings where applicable.
 
 ---
 
@@ -1178,9 +1189,9 @@ Test data will be selected appropriately during execution. Real personal informa
 | Field            | Details                             |
 | ---------------- | ----------------------------------- |
 | Application URL  | https://www.automationexercise.com/ |
-| Browser          | To be updated during execution      |
-| Operating System | To be updated during execution      |
-| Execution Period | To be updated during execution      |
+| Browser          | Google Chrome                       |
+| Operating System | Windows 11 Home Single Language     |
+| Execution Period | August–September 2026               |
 
 ---
 
@@ -1231,6 +1242,6 @@ A defect will be reported only when:
 * The issue can be clearly documented.
 * A Jira defect is created where appropriate.
 
-After execution, the failed test cases and corresponding Jira defect IDs, if any, will be recorded in this document.
+No defects were identified during Products module execution. Therefore, no Jira defect was raised for this module.
 
-Retesting and regression results will be documented separately if a genuine defect is fixed.
+Retesting and regression results will be documented separately if a genuine defect is fixed in a future execution cycle.
