@@ -864,14 +864,14 @@ The quantity control correctly maintained 1 as the minimum value and prevented f
 The selected product should be added to the cart and an appropriate confirmation should be displayed.
 
 **Actual Result:**
-*To be updated during execution.*
+The product was added to the cart successfully with quantity 1. A confirmation popup displayed “Added! Your product has been added to cart.” The popup provided a View Cart link and a green Continue Shopping button. Clicking View Cart redirected to the cart page, while clicking Continue Shopping kept the user on the same product page. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-Record the exact confirmation message displayed during execution.
+The Add to Cart functionality worked correctly, and both View Cart and Continue Shopping options behaved as expected.
 
 ---
 
