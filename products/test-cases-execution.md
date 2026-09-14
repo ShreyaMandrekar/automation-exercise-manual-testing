@@ -551,14 +551,14 @@ Women subcategory filtering for Dress, Tops, and Saree displayed the correspondi
 The selected Men subcategory should display relevant products and update the product listing appropriately.
 
 **Actual Result:**
-*To be updated during execution.*
+Under the Men category, expanded the subcategories and selected Jeans. The page heading changed to “Men Jeans Product” and the relevant jeans products were displayed. The breadcrumb was displayed above the product section, and the Categories and Brands sections remained visible. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Men → Jeans category filtering displayed the expected jeans products and heading.
 
 ---
 
