@@ -1107,14 +1107,14 @@ The Email field correctly rejected incomplete and invalid email formats using br
 The review should be submitted successfully and an appropriate confirmation message should be displayed.
 
 **Actual Result:**
-*To be updated during execution.*
+After entering valid values in the Name, Email, and Review fields and clicking Submit, a green confirmation message “Thank you for your review” was displayed below the review field. The review submission was accepted successfully.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-Record the exact confirmation message displayed after successful submission.
+The review form accepted valid input and displayed the expected confirmation message after successful submission.
 
 ---
 
