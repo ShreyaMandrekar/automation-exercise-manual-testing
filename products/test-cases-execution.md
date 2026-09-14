@@ -1072,14 +1072,14 @@ The review form correctly enforced mandatory validation for Name, Email, and Rev
 The application should prevent submission of invalid email formats and display appropriate email-format validation.
 
 **Actual Result:**
-*To be updated during execution.*
+When test@ was entered in the Email field, the browser displayed the validation message “Please enter the part following '@'. 'test@' is incomplete.” When test was entered, the browser displayed “Please include an '@' in the email address. 'test' is missing an '@'.” The invalid email formats were rejected and the form could not be submitted with them.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-Record the exact browser/application validation messages displayed for each invalid email format.
+The Email field correctly rejected incomplete and invalid email formats using browser email validation.
 
 ---
 
