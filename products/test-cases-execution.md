@@ -110,14 +110,14 @@ Products page loaded successfully with the expected product listing and main pro
 The Products page should display the available product-related UI elements correctly and they should be accessible for interaction where applicable.
 
 **Actual Result:**
-Product cards were displayed on the Products page with the product image, product name, price, Add to Cart button, and View Product option. On hovering over a product card, an orange overlay appeared and highlighted the product information and Add to Cart option. Both Add to Cart and View Product were functioning correctly. No abnormal behavior was observed.
+The Products page displayed the Search Product field, Categories section with Women, Men and Kids and their respective subcategories, Brands section with available brands, and the product listing area. The promotional banner was also displayed. All observed UI elements were displayed properly, and no UI issue was observed.
 
 **Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-Product card information, hover behavior, and available product actions worked as expected during execution.
+The Products page UI elements were displayed correctly during execution with no visible UI issues.
 
 ---
 
@@ -145,14 +145,14 @@ Product card information, hover behavior, and available product actions worked a
 Product cards should display the product image, price, Add to Cart option, and View Product option.
 
 **Actual Result:**
-Entered jeans in the Search Product field and performed the search successfully. Only jeans-related products were displayed. The page heading changed from “All Products” to “Search Products”, and jeans remained in the search field. The Categories and Brands sections remained visible. No unexpected behavior was observed.
+Product cards were displayed on the Products page with the product image, product name, price, Add to Cart button, and View Product option. Both Add to Cart and View Product were functioning correctly. No abnormal behavior was observed.
 
 **Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-Valid keyword search for jeans worked as expected.
+Product card information and available product actions worked as expected during execution.
 
 ---
 
@@ -177,14 +177,14 @@ Valid keyword search for jeans worked as expected.
 The product card should display the available hover overlay without preventing access to the product actions.
 
 **Actual Result:**
-Entered the partial keyword top in the Search Product field and performed the search successfully. Products related to tops were displayed, and the page heading changed to “Search Products.” The Categories and Brands sections remained visible. No unexpected behavior was observed.
+When hovering over a product card, an orange overlay appeared over the product card and highlighted the product information and Add to Cart option. The hover behavior worked correctly without preventing access to the product actions.
 
 **Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-Partial keyword search using top displayed the expected top-related products.
+Product card hover behavior worked as expected during execution.
 
 ---
 
