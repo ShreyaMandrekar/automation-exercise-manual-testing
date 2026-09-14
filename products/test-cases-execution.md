@@ -244,14 +244,14 @@ Valid keyword search using jeans worked as expected.
 Products relevant to T-shirts should be displayed for the entered search keyword.
 
 **Actual Result:**
-*To be updated during execution.*
+Entered tshirt in the Search Product field and performed the search successfully. Only T-shirt-related products were displayed. The page heading changed to “Search Products”, and tshirt remained in the search field. The Categories and Brands sections remained visible. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Search using the keyword tshirt displayed the expected T-shirt-related products.
 
 ---
 
