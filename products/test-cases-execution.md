@@ -620,14 +620,14 @@ Men subcategory filtering for T-shirt and Jeans displayed the corresponding prod
 The Kids category should display the observed subcategories, and selecting each subcategory should display relevant products.
 
 **Actual Result:**
-*To be updated during execution.*
+Under the Kids category, the Dress and Tops & Shirts subcategories were selected individually. The “Kids Dress Product” heading was displayed for Dress, and the corresponding dress products were shown. For Tops & Shirts, the heading changed accordingly and the relevant tops and shirts were displayed. The breadcrumb was displayed above the product section, and the Categories and Brands sections remained visible for both subcategories. No layout changes or unexpected behavior were observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Kids subcategory filtering for Dress and Tops & Shirts displayed the corresponding products and headings as expected.
 
 ---
 
