@@ -998,14 +998,14 @@ The Cart page does not provide direct quantity controls. However, adding the sam
 The Cart should display the added product and its available product information correctly, including condition and brand where provided.
 
 **Actual Result:**
-*To be updated during execution.*
+The Cart page displayed the added product with the product image, product name, unit price, quantity, total price, and delete/remove option. All expected product information and the available remove action were displayed correctly. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+The Cart page displayed the expected product information and available remove option correctly.
 
 ---
 
