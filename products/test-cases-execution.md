@@ -277,14 +277,14 @@ Search using the keyword tshirt displayed the expected T-shirt-related products.
 Products relevant to sarees should be displayed.
 
 **Actual Result:**
-*To be updated during execution.*
+Entered saree in the Search Product field and performed the search successfully. Only saree-related products were displayed. The page heading changed to “Search Products”, and saree remained in the search field. The Categories and Brands sections remained visible. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Search using the keyword saree displayed the expected saree-related products.
 
 ---
 
