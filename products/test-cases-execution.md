@@ -412,14 +412,14 @@ The application handled the non-existing search without displaying unrelated pro
 The application should process the blank search without displaying an incorrect search result, and the resulting product listing should be recorded during execution.
 
 **Actual Result:**
-*To be updated during execution.*
+Left the Search Product field blank and clicked the search button. The page refreshed and all products were displayed again. The heading remained “All Products”, and the Categories and Brands sections remained visible. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Blank search refreshed the Products page and displayed all products as expected.
 
 ---
 
