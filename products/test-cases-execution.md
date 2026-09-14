@@ -1037,14 +1037,14 @@ The Cart page displayed the expected product information and available remove op
 The review form should prevent submission when required fields are blank and should display appropriate validation feedback for the missing fields.
 
 **Actual Result:**
-*To be updated during execution.*
+When Name, Email, and Review were left blank and Submit was clicked, a browser validation popup displayed “Please fill out this field.” for the Name field. After entering the Name and submitting again, the same validation appeared for the Email field. After entering the Email and submitting again, the validation appeared for the Review field. The Email field also displayed browser email-format validation when an invalid email format was entered.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-Record the exact validation message and the field on which validation is triggered.
+The review form correctly enforced mandatory validation for Name, Email, and Review fields. The Email field also applied format validation.
 
 ---
 
