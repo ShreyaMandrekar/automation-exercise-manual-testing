@@ -655,14 +655,14 @@ Kids subcategory filtering for Dress and Tops & Shirts displayed the correspondi
 The application should display products associated with the selected brand and update the product listing and page heading appropriately.
 
 **Actual Result:**
-*To be updated during execution.*
+Clicked on Polo under the Brands section. The page heading changed to “Brand Polo Product” and Polo-related products were displayed. The Categories and Brands sections remained visible. A breadcrumb was displayed above the product section, indicating Products and Polo. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Brand filtering for Polo displayed the expected Polo-related products and brand heading.
 
 ---
 
