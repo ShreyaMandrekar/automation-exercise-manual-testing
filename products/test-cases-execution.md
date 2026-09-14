@@ -379,14 +379,14 @@ Partial keyword searches using tops and sare displayed the expected related prod
 No unrelated products should be displayed when the search keyword does not match any available product. The application should handle the empty result state without displaying incorrect product results.
 
 **Actual Result:**
-*To be updated during execution.*
+Entered xyzabc123 in the Search Product field and clicked the search button. The page heading changed to “Search Products”. No products were displayed and the product area appeared blank/white. The Categories and Brands sections remained visible. No “No products found” message was displayed. No unexpected error occurred.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-Record whether an explicit no-results message is displayed.
+The application handled the non-existing search without displaying unrelated products. The absence of a specific “No products found” message was recorded as an observation and was not classified as a defect because no explicit requirement for such a message is available.
 
 ---
 
