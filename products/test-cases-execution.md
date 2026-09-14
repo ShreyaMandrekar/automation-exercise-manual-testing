@@ -930,14 +930,14 @@ The Continue Shopping option kept the user on the current product page as expect
 The View Cart option should open the Cart page successfully.
 
 **Actual Result:**
-*To be updated during execution.*
+After adding the product to the cart, clicking View Cart redirected to the Cart page successfully. The added product was displayed in the cart with its product image, product name, price, quantity, and total price. A delete/cross option was also available to remove the product from the cart. The cart details were displayed in tabular form. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+The View Cart option redirected to the Cart page successfully and displayed the added product with the expected cart details and available actions.
 
 ---
 
