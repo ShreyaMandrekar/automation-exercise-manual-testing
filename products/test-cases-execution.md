@@ -517,14 +517,14 @@ Women → Dress category filtering displayed the expected dress products and hea
 The Women category should display the observed subcategories, and selecting each subcategory should display relevant products.
 
 **Actual Result:**
-*To be updated during execution.*
+Under the Women category, the Dress, Tops, and Saree subcategories were selected individually. The respective headings changed to “Women Dress Product”, “Women Tops Product”, and “Women Saree Product”, and the corresponding products were displayed for each subcategory. The Categories and Brands sections remained visible in all three subcategory views. The promotional banner and Search Product field were not displayed on the subcategory pages. The category page layout and product display worked as observed, with no unexpected behavior.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Women subcategory filtering for Dress, Tops, and Saree displayed the corresponding products and category headings as expected.
 
 ---
 
