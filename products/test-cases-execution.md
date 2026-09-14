@@ -211,14 +211,14 @@ Product card hover behavior worked as expected during execution.
 Products relevant to the `jeans` search keyword should be displayed.
 
 **Actual Result:**
-*To be updated during execution.*
+Entered jeans in the Search Product field and performed the search successfully. Only jeans-related products were displayed. The page heading changed from “All Products” to “Search Products”, and jeans remained in the search field. The Categories and Brands sections remained visible. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Valid keyword search using jeans worked as expected.
 
 ---
 
