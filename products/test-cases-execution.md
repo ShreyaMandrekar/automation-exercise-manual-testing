@@ -688,14 +688,14 @@ Brand filtering for Polo displayed the expected Polo-related products and brand 
 The Brands section should display the available brands and associated product counts where provided by the application.
 
 **Actual Result:**
-*To be updated during execution.*
+The Brands section displayed all available brands, including Polo, H&M, Madame, Mast & Harbour, Babyhug, Allen Solly Junior, Kookie Kids, and Biba. The brand options were accessible, and selecting the brands displayed their respective products with the corresponding heading. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+All listed brands were displayed and accessible, and brand selection displayed the corresponding products correctly.
 
 ---
 
