@@ -344,14 +344,16 @@ Partial keyword search using top displayed the expected top-related products.
 The application should process each partial search term and display products relevant to the entered search term according to its search behavior.
 
 **Actual Result:**
-*To be updated during execution.*
+Searched for tops and clicked the search button. All relevant tops products were displayed and the page heading changed to “Search Products”. The Categories and Brands sections remained visible.
 
-**Status:** NOT EXECUTED
+Searched for sare and clicked the search button. Relevant saree products were displayed and the page heading remained “Search Products”. The Categories and Brands sections remained visible. No unexpected behavior was observed in either search.
+
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Partial keyword searches using tops and sare displayed the expected related products.
 
 ---
 
