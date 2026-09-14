@@ -177,14 +177,14 @@ Valid keyword search for jeans worked as expected.
 The product card should display the available hover overlay without preventing access to the product actions.
 
 **Actual Result:**
-*To be updated during execution.*
+Entered the partial keyword top in the Search Product field and performed the search successfully. Products related to tops were displayed, and the page heading changed to “Search Products.” The Categories and Brands sections remained visible. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Partial keyword search using top displayed the expected top-related products.
 
 ---
 
