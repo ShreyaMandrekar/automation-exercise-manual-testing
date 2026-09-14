@@ -310,14 +310,14 @@ Search using the keyword saree displayed the expected saree-related products.
 The application should display products relevant to the entered partial search term according to its search behavior.
 
 **Actual Result:**
-*To be updated during execution.*
+Entered top in the Search Product field and performed the search successfully. Products related to tops were displayed. The page heading changed to “Search Products”, and top remained in the search field. The Categories and Brands sections remained visible. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Partial keyword search using top displayed the expected top-related products.
 
 ---
 
