@@ -764,14 +764,14 @@ The Polo brand count matched the number of corresponding products displayed.
 The Product Details page should display the available product information and actions correctly.
 
 **Actual Result:**
-*To be updated during execution.*
+Opened a product using View Product. The product details page displayed the product image, name, category, rating, price, quantity controls, Add to Cart button, availability, condition, brand, and Write Your Review section with Name, Email, Review, and Submit fields. The Categories and Brands sections were also visible. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Product details and available product information and actions were displayed correctly.
 
 ---
 
