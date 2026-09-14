@@ -721,14 +721,14 @@ All listed brands were displayed and accessible, and brand selection displayed t
 The product count displayed for the selected brand should be consistent with the products available for that brand.
 
 **Actual Result:**
-*To be updated during execution.*
+The Polo brand displayed a count of 6 next to the brand name. After selecting Polo, exactly 6 Polo-related products were displayed. The displayed brand count matched the number of products shown. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+The Polo brand count matched the number of corresponding products displayed.
 
 ---
 
