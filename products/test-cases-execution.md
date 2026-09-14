@@ -897,14 +897,14 @@ The Add to Cart functionality worked correctly, and both View Cart and Continue 
 The Continue Shopping option should be available and should allow the user to continue browsing products.
 
 **Actual Result:**
-*To be updated during execution.*
+After adding the product to the cart, clicking Continue Shopping kept the user on the same product page. No redirection occurred, and no unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+The Continue Shopping option kept the user on the current product page as expected.
 
 ---
 
