@@ -797,14 +797,14 @@ Product details and available product information and actions were displayed cor
 The quantity should increase according to the application's supported quantity behavior.
 
 **Actual Result:**
-*To be updated during execution.*
+The initial product quantity was 1. Clicking the upper arrow increased the quantity successfully. The selected product remained unchanged while the quantity was increased. The quantity control also provided an up arrow and down arrow for increasing and decreasing the quantity. The quantity could not be decreased below 1.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-Record the initial and final quantity during execution.
+Product quantity increased correctly using the quantity control, while the selected product remained unchanged.
 
 ---
 
