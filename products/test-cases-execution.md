@@ -585,14 +585,14 @@ Men → Jeans category filtering displayed the expected jeans products and headi
 The Men category should display the observed subcategories, and selecting each subcategory should display relevant products.
 
 **Actual Result:**
-*To be updated during execution.*
+Under the Men category, the T-shirt and Jeans subcategories were selected individually. The corresponding page heading was displayed for each selection, and the relevant T-shirt and jeans products were shown. The breadcrumb was displayed above the product section. The Categories and Brands sections remained visible for both subcategories. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+Men subcategory filtering for T-shirt and Jeans displayed the corresponding products and category headings as expected.
 
 ---
 
