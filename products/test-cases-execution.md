@@ -447,14 +447,14 @@ Blank search refreshed the Products page and displayed all products as expected.
 The entered search term should remain available in the search field where supported. The search results should be identified appropriately, and the surrounding Categories and Brands sections should remain available unless the application is designed to hide them.
 
 **Actual Result:**
-*To be updated during execution.*
+Before searching, the page heading was “All Products”. After entering jeans in the Search Product field and clicking the search button, the heading changed to “Search Products”. The jeans keyword remained in the search field, and only jeans-related products were displayed. The Categories and Brands sections remained visible. No unexpected behavior was observed.
 
-**Status:** NOT EXECUTED
+**Status:** PASS
 
 **Defect ID:** N/A
 
 **Comments:**
-*To be updated during execution.*
+The search heading and search field behaved as expected during a valid product search.
 
 ---
 
