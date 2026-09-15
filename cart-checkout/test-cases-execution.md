@@ -253,16 +253,16 @@ Both different products were successfully added and displayed as separate Cart i
 The Cart should display the relevant product information, including product details, unit price, quantity, and total price.
 
 **Actual Result:**
-To be updated during formal execution.
+For Madame Top For Women, the Cart displayed the product image, product name, unit price, quantity, and total price properly.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The relevant product information was displayed correctly for the product in the Cart.
 
 ---
 
