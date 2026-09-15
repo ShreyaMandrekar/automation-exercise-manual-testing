@@ -324,16 +324,16 @@ Existing product quantity was correctly incremented by the newly selected quanti
 The product total should equal the unit price multiplied by the selected quantity.
 
 **Actual Result:**
-To be updated during formal execution.
+For Madame Top For Women, the unit price was ₹1,000 and the quantity was 4. The displayed total price was ₹4,000, which correctly equals ₹1,000 × 4.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+Product total price was calculated and displayed correctly based on unit price and quantity.
 
 ---
 
