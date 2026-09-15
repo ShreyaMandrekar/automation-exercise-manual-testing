@@ -286,19 +286,19 @@ The relevant product information was displayed correctly for the product in the 
 5. Observe the displayed quantity.
 
 **Expected Result:**
-The Cart should display the quantity corresponding to the quantity selected before adding the product.
+If the product already exists in the Cart, adding the product with a selected quantity should increment the existing Cart quantity by the selected quantity.
 
 **Actual Result:**
-To be updated during formal execution.
+The Madame Top For Women was already present in the Cart with quantity 1. After selecting quantity 3 on the product details page and clicking Add to Cart, the application updated the existing product quantity to 4 (1 existing + 3 newly added). No duplicate product entry was created.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+Existing product quantity was correctly incremented by the newly selected quantity. The same product was updated instead of creating a duplicate Cart entry.
 
 ---
 
