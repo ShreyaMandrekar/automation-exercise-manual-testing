@@ -115,16 +115,16 @@ Cart page is accessible and displays the expected empty-cart state.
 The application should display an appropriate message indicating that the Cart is empty.
 
 **Actual Result:**
-To be updated during formal execution.
+The Cart page displayed “Cart is empty!” in bold text when no products were present in the Cart. The message also included “Click here to buy products”, with “here” displayed as a hyperlink.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The expected empty Cart message was displayed correctly when the Cart contained no products.
 
 ---
 
