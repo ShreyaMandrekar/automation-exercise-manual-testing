@@ -219,16 +219,16 @@ The single product was successfully added and displayed in the Cart. The applica
 All successfully added products should be displayed separately in the Cart.
 
 **Actual Result:**
-To be updated during formal execution.
+Madame Top For Women and Summer White Top were successfully added to the Cart. Both products were displayed separately in the Cart.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+Both different products were successfully added and displayed as separate Cart items.
 
 ---
 
