@@ -81,16 +81,16 @@ Unless otherwise specified:
 The Cart page should open successfully and display the appropriate cart state.
 
 **Actual Result:**
-To be updated during formal execution.
+The Cart page opened successfully from the navbar. The breadcrumb displayed Home > Shopping Cart. Since no products were present, the page displayed “Cart is empty!” in bold text along with “Click here to buy products”, where “here” is a hyperlink.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+Cart page is accessible and displays the expected empty-cart state.
 
 ---
 
