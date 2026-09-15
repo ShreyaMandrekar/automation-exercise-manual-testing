@@ -428,16 +428,17 @@ Selected product was removed successfully while the remaining product stayed in 
 The product should be removed and the appropriate empty-cart state should be displayed.
 
 **Actual Result:**
-To be updated during formal execution.
+After removing the last remaining product, Summer White Top, the Cart became empty and displayed:
+“Cart is empty! Click here to buy products.”
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+Last remaining product was removed successfully and the expected empty Cart message was displayed.
 
 ---
 
