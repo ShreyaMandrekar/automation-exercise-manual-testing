@@ -184,16 +184,16 @@ The “here” hyperlink correctly redirects the user from the empty Cart to the
 The added product should be displayed correctly in the Cart.
 
 **Actual Result:**
-To be updated during formal execution.
+The Madame Top For Women was successfully added to the Cart and was displayed in the Cart. After adding the product, the application displayed an “Added!” confirmation popup with the message “Your product has been added to cart.” The popup also provided “View Cart” and “Continue Shopping” options.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The single product was successfully added and displayed in the Cart. The application also displayed the expected add-to-cart confirmation popup.
 
 ---
 
