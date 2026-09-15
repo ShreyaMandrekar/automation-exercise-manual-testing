@@ -500,5 +500,370 @@ The Products module was explored across:
 
 The exploration identified the main product listing components, search behavior, category and brand filtering, product detail information, quantity behavior, Add to Cart flow, and product review validation.
 
+---
+
+# Cart & Checkout – Exploratory Observations
+
+## Cart Page
+
+The Cart section is accessible from the main navigation of the Automation Exercise application.
+
+### Empty Cart
+
+When the Cart was opened without any products added, the following message was displayed:
+
+**“Cart is empty! Click here to buy products”**
+
+The word **“here”** was displayed as a hyperlink.
+
+Selecting the **“here”** link redirected to the Products section.
+
+### Cart with a Product
+
+A product was added to the cart from the Product Details page.
+
+After opening the Cart:
+
+* The added product was displayed successfully.
+* Product information was displayed in tabular form.
+* The Cart page displayed a **Proceed To Checkout** button.
+* A **Continue On Cart** button was also available.
+
+Selecting **Continue On Cart** kept the user on the Cart page.
+
+---
+
+## Multiple Products in Cart
+
+Two different products were added to the Cart:
+
+1. **Madame Top For Women** – ₹400
+2. **Summer White Top** – ₹1,000
+
+Both products were displayed correctly in the Cart.
+
+The quantities were initially set to 1 for both products.
+
+The total amount displayed for the two products was calculated correctly:
+
+**₹400 + ₹1,000 = ₹1,400**
+
+No unexpected calculation behavior was observed.
+
+---
+
+## Removing Products from Cart
+
+The remove functionality was explored with two products in the Cart.
+
+### Removing One Product
+
+When the first product was removed:
+
+* The first product was removed successfully.
+* The second product remained displayed in the Cart.
+
+### Removing the Last Product
+
+When the remaining product was removed:
+
+* The Cart became empty.
+* The message **“Cart is empty! Click here to buy products”** was displayed.
+* The **“here”** hyperlink was available for navigation back to Products.
+
+The Cart correctly handled removal of both individual and final products during exploration.
+
+---
+
+## Cart Quantity and Price Calculation
+
+The quantity and price calculation behavior was explored using **Madame Top For Women**.
+
+The product price was **₹400** per item.
+
+The quantity was increased from 1 to 3 before proceeding to the Cart.
+
+The Cart displayed:
+
+* Product: Madame Top For Women
+* Unit price: ₹400
+* Quantity: 3
+* Total: ₹1,200
+
+The calculation was correct:
+
+**₹400 × 3 = ₹1,200**
+
+A second product, **Summer White Top**, was also present with quantity 1 and a total of ₹1,000.
+
+The combined total displayed was:
+
+**₹1,200 + ₹1,000 = ₹2,200**
+
+The Cart total matched the expected calculation during exploration.
+
+---
+
+## Checkout Access
+
+The **Proceed To Checkout** functionality was explored with a product in the Cart.
+
+When Proceed To Checkout was selected while the user was not logged in:
+
+* The Checkout page was displayed.
+* A message indicated that the user must **login/register an account to proceed with checkout**.
+* A **Register/Login** hyperlink was available.
+* Selecting the hyperlink redirected to the Signup/Login section.
+* A **Continue On Cart** button was also displayed.
+* Selecting Continue On Cart kept the user on the Cart page.
+
+Checkout therefore required the user to be logged in before proceeding with the order.
+
+---
+
+## Cart Persistence After Login
+
+A product had been added to the Cart before logging in.
+
+After navigating to the Signup/Login section and successfully logging in:
+
+* The previously added product remained in the Cart.
+* The product was available when returning to the Checkout flow.
+
+The previously added Cart item was therefore retained after login during the observed flow.
+
+---
+
+# Checkout Page
+
+After logging in, selecting **Proceed To Checkout** opened the Checkout page.
+
+The Checkout page displayed:
+
+* Delivery Address
+* Billing Address
+* Review Your Order section
+
+---
+
+## Delivery and Billing Address
+
+The Checkout page displayed the Delivery Address and Billing Address side by side.
+
+During exploration:
+
+* The Delivery Address was displayed.
+* The Billing Address was displayed.
+* Both addresses contained the same address details.
+* No Edit or Change option was visible.
+* The displayed address information appeared static during the observed checkout flow.
+
+No address modification functionality was observed during exploration.
+
+---
+
+## Review Your Order
+
+The **Review Your Order** section displayed the products in tabular form.
+
+For the tested order:
+
+* **Madame Top For Women**
+  * Quantity: 3
+  * Price: ₹400 per item
+  * Total: ₹1,200
+* **Summer White Top**
+  * Quantity: 1
+  * Price: ₹1,000
+  * Total: ₹1,000
+
+The overall total displayed was:
+
+**₹2,200**
+
+The displayed totals matched the observed product quantities and prices.
+
+---
+
+## Order Comment
+
+The Checkout page contained a field with the instruction:
+
+**“If you would like to add a comment about your order, please write it in the field below.”**
+
+### Blank Comment
+
+The order comment field was left blank during one checkout attempt.
+
+The order was allowed to proceed without entering a comment.
+
+### Entered Comment
+
+The following test comment was entered during another checkout attempt:
+
+**“Please handle the product carefully do not fold”**
+
+The order proceeded to the Payment page successfully.
+
+The entered comment was not visibly displayed on the subsequent Payment page during the observed flow.
+
+This behavior was recorded as an observation and was not classified as a defect because no explicit requirement was available stating that the comment must be displayed on the Payment page.
+
+---
+
+# Payment Page
+
+After selecting the option to place the order, the Payment page was displayed.
+
+The Payment page contained:
+
+* Name on Card
+* Card Number
+* CVC
+* Expiration Month
+* Expiration Year
+* Pay and Confirm Order button
+
+Only dummy test data was used during payment exploration.
+
+---
+
+## Payment Mandatory Field Validation
+
+The Pay and Confirm Order button was selected without entering payment details.
+
+The browser displayed mandatory-field validation sequentially.
+
+Observed behavior:
+
+1. Name on Card displayed:
+   **“Please fill out this field.”**
+2. After entering a value in Name on Card, Card Number displayed:
+   **“Please fill out this field.”**
+3. After entering a value in Card Number, CVC displayed:
+   **“Please fill out this field.”**
+4. After entering a value in CVC, Expiration Month displayed:
+   **“Please fill out this field.”**
+5. After entering a value in Expiration Month, Expiration Year displayed:
+   **“Please fill out this field.”**
+
+The form therefore performed mandatory-field validation sequentially for the payment fields.
+
+---
+
+## Payment Input Format Observation
+
+During exploration, values that were not appropriate numeric formats were entered into the payment fields to observe the application's validation behavior.
+
+The following values were used:
+
+| Field | Test Input |
+|---|---|
+| Name on Card | `123` |
+| Card Number | `ABC` |
+| CVC | `ABC` |
+| Expiration Month | `AB` |
+| Expiration Year | `ABCD` |
+
+The payment form accepted these entered values and allowed the order to proceed to confirmation.
+
+This behavior was recorded as an **exploratory observation** and was not automatically classified as a defect. Formal test cases should be used to determine the expected validation behavior for each payment field before raising a defect.
+
+---
+
+# Order Confirmation
+
+After selecting **Pay and Confirm Order**:
+
+* A confirmation message appeared near the payment section indicating that the order was confirmed.
+* The application redirected to the order confirmation page.
+* The page displayed:
+  **“Order Placed!”**
+* A confirmation message displayed:
+  **“Congratulations, your order has been confirmed.”**
+* A **Continue** button was displayed.
+* A **Download Invoice** button was displayed.
+
+The order was successfully completed during the observed flow.
+
+---
+
+## Download Invoice
+
+The **Download Invoice** option was selected after successful order completion.
+
+A text invoice file was downloaded successfully.
+
+The downloaded invoice contained:
+
+* Customer name
+* Total purchase amount
+* Thank-you message
+
+The invoice displayed the customer's name and total purchase amount for the completed order.
+
+---
+
+## Continue After Order Completion
+
+The **Continue** button on the order confirmation page was selected.
+
+The application redirected the user to the Home page.
+
+---
+
+# Post-Order Order History / Tracking Observation
+
+After completing the order, the application was explored for visible order-history or order-tracking functionality.
+
+During the observed session:
+
+* No separate order history section was visible in the navigation.
+* No order tracking option was visible.
+* The logged-in username was displayed but was not clickable for accessing an order/profile section.
+* The completed order was not visibly listed anywhere in the observed navigation after returning to the application.
+
+This was recorded as an exploratory observation and was **not classified as a defect**, because no explicit requirement was available stating that the application must provide order history or order tracking.
+
+---
+
+# Observations Requiring Further Formal Testing
+
+The following behaviors were identified during Cart & Checkout exploratory testing and should be investigated through formal test cases:
+
+* Empty Cart behavior and navigation to Products.
+* Adding single and multiple products to the Cart.
+* Removing individual products.
+* Removing the final product from the Cart.
+* Cart quantity and price calculations.
+* Cart persistence after login.
+* Checkout access for logged-out and logged-in users.
+* Delivery and Billing Address display.
+* Availability of address editing functionality.
+* Review Your Order details and total calculation.
+* Blank order comment behavior.
+* Order comment handling after proceeding to Payment.
+* Payment mandatory-field validation.
+* Payment field input-format validation.
+* Successful payment and order confirmation.
+* Invoice download.
+* Invoice content.
+* Continue navigation after order completion.
+* Availability of order history/tracking after order completion.
+
+These observations are **not automatically classified as defects**. They should be compared with the applicable expected results and formally executed before raising any defect.
+
+---
+
+# Exploratory Testing Conclusion
+
+The Cart & Checkout functionality was explored across:
+
+**Empty Cart → Add Product → Multiple Products → Remove Product → Quantity & Calculation → Checkout → Login → Address → Review Order → Order Comment → Payment → Order Confirmation → Invoice → Continue**
+
+The exploration covered the main Cart and Checkout user flow, product quantities and calculations, authentication requirement, address display, order review, order comments, payment validation, order confirmation, invoice download, and post-order navigation.
+
+The observations from this exploration will be used as input for designing the formal **Cart & Checkout test scenarios and detailed test cases**.
+
 The observations from this exploration will be used as input for designing the formal Products test scenarios and detailed test cases.
 
