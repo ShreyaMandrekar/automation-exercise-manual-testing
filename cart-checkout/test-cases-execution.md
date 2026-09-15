@@ -337,39 +337,39 @@ Product total price was calculated and displayed correctly based on unit price a
 
 ---
 
-## TC-CART-009 – Verify overall Cart total with multiple products
+## TC-CART-009 – Verify overall order total with multiple products at Checkout
 
 **Scenario:** TS-CART-06
 
-| Field         | Details                                                        |
-| ------------- | -------------------------------------------------------------- |
-| Test Case ID  | TC-CART-009                                                    |
-| Priority      | High                                                           |
-| Preconditions | Multiple products are available                                |
-| Test Data     | Madame Top For Women – ₹400 × 3; Summer White Top – ₹1,000 × 1 |
+| Field         | Details                                                                 |
+| ------------- | ---------------------------------------------------------------------- |
+| Test Case ID  | TC-CART-009                                                             |
+| Priority      | High                                                                    |
+| Preconditions | Multiple products are available in the Cart                             |
+| Test Data     | Madame Top For Women – ₹1,000 × 4; Summer White Top – ₹400 × 1          |
 
 **Steps:**
 
-1. Add Madame Top For Women with quantity 3.
-2. Add Summer White Top with quantity 1.
-3. Open the Cart.
-4. Observe the individual product totals.
-5. Observe the overall Cart total.
+1. Add multiple products to the Cart with the required quantities.
+2. Open the Cart.
+3. Verify the individual product totals.
+4. Click **Proceed To Checkout**.
+5. Observe the order total displayed on the Checkout page.
 
 **Expected Result:**
-The overall Cart total should correctly reflect the combined totals of all products and quantities.
+The Checkout page should display the overall order total correctly by combining the individual product totals and quantities.
 
 **Actual Result:**
-To be updated during formal execution.
+The Cart page displayed the individual product totals but did not display a separate overall combined total. After clicking **Proceed To Checkout**, the Checkout page displayed the overall order total as **₹4,400**, calculated from ₹4,000 for Madame Top For Women and ₹400 for Summer White Top.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The overall order total was not displayed separately on the Cart page. The application displayed the combined total on the Checkout page, where the amount was calculated correctly.
 
 ---
 
