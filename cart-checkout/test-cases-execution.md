@@ -394,16 +394,16 @@ The overall order total was not displayed separately on the Cart page. The appli
 The selected product should be removed while the remaining product(s) should remain in the Cart.
 
 **Actual Result:**
-To be updated during formal execution.
+Madame Top For Women was removed successfully from the Cart. The Summer White Top remained in the Cart with its existing quantity and product details.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+Selected product was removed successfully while the remaining product stayed in the Cart with its quantity and details unchanged.
 
 ---
 
