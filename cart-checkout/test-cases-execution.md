@@ -150,16 +150,16 @@ The expected empty Cart message was displayed correctly when the Cart contained 
 The link should redirect the user to the Products page.
 
 **Actual Result:**
-To be updated during formal execution.
+Clicking the “here” hyperlink in the empty Cart message redirected the user to the Products page successfully.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The “here” hyperlink correctly redirects the user from the empty Cart to the Products page.
 
 ---
 
