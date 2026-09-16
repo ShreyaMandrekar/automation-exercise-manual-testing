@@ -739,16 +739,16 @@ The Billing Address section displayed the available address details associated w
 The user should be able to proceed without entering an Order Comment.
 
 **Actual Result:**
-To be updated during formal execution.
+The Order Comment field was left blank, and the application allowed the user to proceed further with the order flow without entering a comment.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The Order Comment field is optional, as the application allowed the order flow to continue without entering any comment.
 
 ---
 
