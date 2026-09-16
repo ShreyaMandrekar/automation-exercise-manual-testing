@@ -1111,16 +1111,16 @@ The order was successfully placed using valid-format payment test data, and the 
 The application should indicate that the order has been successfully confirmed.
 
 **Actual Result:**
-To be updated during formal execution.
+The Order Placed page was displayed successfully. The page showed the confirmation message “Congratulations, your order has been confirmed.” It also displayed the Download Invoice and Continue buttons.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The Order Confirmation page displayed the expected confirmation message and available post-order options correctly.
 
 ---
 
