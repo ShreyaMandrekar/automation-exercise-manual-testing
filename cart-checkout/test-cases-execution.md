@@ -1251,16 +1251,16 @@ The Continue button redirected the user to the Home page successfully.
 If the application provides an order history or tracking feature, previously placed orders should be accessible through the available navigation.
 
 **Actual Result:**
-To be updated during formal execution.
+No Order History, My Orders, Orders, or Order Tracking option was available in the navigation menu. No option was observed to access or track the recently placed order.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-If no such feature is available, the absence will be recorded as an observation and will not automatically be treated as a defect without a defined requirement.
+No order history or tracking feature was observed in the current application UI. This was recorded as an observation and not treated as a defect because no explicit requirement for this functionality was identified.
 
 ---
 
