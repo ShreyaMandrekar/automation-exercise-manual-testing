@@ -499,16 +499,16 @@ Continue Shopping functionality worked correctly. The user remained on the curre
 The application should proceed to the Checkout flow or display the appropriate authentication requirement based on the user's login state.
 
 **Actual Result:**
-To be updated during formal execution.
+After clicking **Proceed To Checkout** as a logged-in user, the application successfully redirected to the Checkout page. The page displayed the Delivery Address and Billing Address sections, followed by the Review Your Order section showing the products in tabular form with the total amount. An order comment section was also displayed.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+Proceed To Checkout successfully navigated the logged-in user to the Checkout page, where the expected checkout sections were displayed.
 
 ---
 
