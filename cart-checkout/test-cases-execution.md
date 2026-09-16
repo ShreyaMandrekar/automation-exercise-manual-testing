@@ -534,16 +534,16 @@ Proceed To Checkout successfully navigated the logged-in user to the Checkout pa
 The application should inform the logged-out user that login or registration is required to proceed with checkout.
 
 **Actual Result:**
-To be updated during formal execution.
+After logging out and clicking **Proceed To Checkout** with a product in the Cart, the application displayed a Checkout popup stating **“Register / Login account to proceed on checkout.”** The popup provided a **Register / Login** hyperlink that redirected to the Signup/Login page, along with a **Continue On Cart** button.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+Logged-out users were prevented from proceeding directly to checkout and were provided with a Register/Login option to continue.
 
 ---
 
