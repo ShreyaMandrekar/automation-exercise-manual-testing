@@ -5,10 +5,10 @@
 | Field | Details |
 |---|---|
 | Project | Automation Exercise - Manual QA |
-| Module | Registration |
+| Module | Registration, Cart & Checkout |
 | Application | Automation Exercise |
 | Defect Tracking Tool | Jira |
-| Defects Pending Retest | 2 |
+| Defects Pending Retest | 3 |
 
 ---
 
@@ -18,6 +18,7 @@
 |---|---|---|---|---|
 | AEMQ-1 | TC-REG-021 | Zipcode field accepts invalid input formats without validation | Open | Pending |
 | AEMQ-2 | TC-REG-022 | Mobile Number field accepts invalid formats without validation | Open | Pending |
+| AEMQ-3 | TC-CART-028 | Payment fields accept invalid input formats | Open | Pending |
 
 The identified defects have been documented in Jira but have not yet been fixed. Therefore, retesting has not been performed.
 
@@ -101,15 +102,49 @@ After AEMQ-2 is fixed, related registration functionality should be checked, inc
 
 ---
 
-## 6. Regression Testing Status
+## 6. AEMQ-3 Retesting
 
-Regression testing for the registration module has not yet been performed specifically after defect fixes because AEMQ-1 and AEMQ-2 remain open.
+### Defect
+Payment fields accept invalid input formats.
+
+### Related Test Case
+TC-CART-028
+
+### Jira Defect
+AEMQ-3
+
+### Current Status
+Open
+
+### Retest Status
+Pending
+
+### Retest Result
+Not yet executed because the defect has not been confirmed as fixed.
+
+### Regression Scope
+
+After AEMQ-3 is fixed, related Cart & Checkout functionality should be checked, including:
+
+- Payment field mandatory validation
+- Valid payment data acceptance
+- Invalid payment format validation
+- Successful order placement
+- Order confirmation
+- Invoice download
+- Cart state after successful order placement
+
+---
+
+## 7. Regression Testing Status
+
+Regression testing for the Registration and Cart & Checkout modules has not yet been performed specifically after defect fixes because AEMQ-1, AEMQ-2, and AEMQ-3 remain open.
 
 Regression testing will be performed after the relevant fixes are available.
 
 ---
 
-## 7. Notes
+## 8. Notes
 
 - Retesting will use the original failed test cases whenever possible.
 - A defect will not be marked as resolved without successful retesting.
