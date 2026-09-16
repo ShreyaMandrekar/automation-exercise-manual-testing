@@ -1111,7 +1111,8 @@ The order was successfully placed using valid-format payment test data, and the 
 The application should indicate that the order has been successfully confirmed.
 
 **Actual Result:**
-The Order Placed page was displayed successfully. The page showed the confirmation message “Congratulations, your order has been confirmed.” It also displayed the Download Invoice and Continue buttons.
+**Actual Result:**
+The Order Placed page was displayed successfully. The page showed the confirmation message “Congratulations, your order has been confirmed.”
 
 **Status:**
 PASS
@@ -1120,7 +1121,7 @@ PASS
 N/A
 
 **Comments:**
-The Order Confirmation page displayed the expected confirmation message and available post-order options correctly.
+The application displayed the expected order confirmation message after successful order placement.
 
 ---
 
@@ -1147,7 +1148,7 @@ The Order Confirmation page displayed the expected confirmation message and avai
 The Order Confirmation page should indicate successful order placement and provide the available post-order options.
 
 **Actual Result:**
-Clicking Download Invoice successfully downloaded a text file. The downloaded file opened successfully and displayed the customer's first and last name, a message showing the total purchase amount of ₹400, and a thank-you message.
+The Order Placed page was displayed successfully. It showed the confirmation message “Congratulations, your order has been confirmed.” The page also displayed the Download Invoice and Continue buttons.
 
 **Status:**
 PASS
@@ -1156,7 +1157,7 @@ PASS
 N/A
 
 **Comments:**
-The invoice file was downloaded successfully, opened without errors, and contained customer information, purchase amount, and a thank-you message.
+The Order Confirmation page displayed the expected order status, confirmation message, and available post-order options.
 
 ---
 
@@ -1182,16 +1183,16 @@ The invoice file was downloaded successfully, opened without errors, and contain
 The invoice should download successfully and contain the available order/customer information.
 
 **Actual Result:**
-To be updated during formal execution.
+Clicking Download Invoice successfully downloaded a text file. The downloaded file opened successfully and displayed the customer's first and last name, the total purchase amount of ₹400, and a thank-you message.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The invoice file was downloaded successfully, opened without errors, and contained the observed customer information, purchase amount, and thank-you message.
 
 ---
 
