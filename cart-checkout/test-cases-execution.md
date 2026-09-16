@@ -1147,16 +1147,16 @@ The Order Confirmation page displayed the expected confirmation message and avai
 The Order Confirmation page should indicate successful order placement and provide the available post-order options.
 
 **Actual Result:**
-To be updated during formal execution.
+Clicking Download Invoice successfully downloaded a text file. The downloaded file opened successfully and displayed the customer's first and last name, a message showing the total purchase amount of ₹400, and a thank-you message.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The invoice file was downloaded successfully, opened without errors, and contained customer information, purchase amount, and a thank-you message.
 
 ---
 
