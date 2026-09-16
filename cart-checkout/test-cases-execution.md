@@ -25,7 +25,7 @@ The objective of these test cases is to verify the Cart and Checkout functionali
 * Product quantity
 * Product price and total calculation
 * Product removal
-* Continue On Cart
+* Continue Shopping
 * Proceed To Checkout
 * Checkout access for logged-out users
 * Cart persistence after login
@@ -311,14 +311,14 @@ Existing product quantity was correctly incremented by the newly selected quanti
 | Test Case ID  | TC-CART-008                             |
 | Priority      | High                                    |
 | Preconditions | Product is present in Cart              |
-| Test Data     | Madame Top For Women – ₹400; Quantity 3 |
+| Test Data     | Madame Top For Women – ₹1,000; Quantity 4 |
 
 **Steps:**
 
-1. Add the product to the Cart.
-2. Set the quantity to 3 before adding it, where supported.
-3. Open the Cart.
-4. Observe the unit price, quantity, and product total.
+1. Open the Cart.
+2. Identify the product and its displayed unit price and quantity.
+3. Observe the product total.
+4. Verify whether the product total equals unit price multiplied by quantity.
 
 **Expected Result:**
 The product total should equal the unit price multiplied by the selected quantity.
@@ -486,7 +486,7 @@ Continue Shopping functionality worked correctly. The user remained on the curre
 | ------------- | --------------------------------------- |
 | Test Case ID  | TC-CART-013                             |
 | Priority      | High                                    |
-| Preconditions | At least one product is present in Cart |
+| Preconditions | User is logged in and at least one product is present in Cart |
 | Test Data     | Any Cart product                        |
 
 **Steps:**
@@ -496,7 +496,7 @@ Continue Shopping functionality worked correctly. The user remained on the curre
 3. Observe the resulting flow.
 
 **Expected Result:**
-The application should proceed to the Checkout flow or display the appropriate authentication requirement based on the user's login state.
+Clicking **Proceed To Checkout** should successfully navigate the logged-in user to the Checkout page.
 
 **Actual Result:**
 After clicking **Proceed To Checkout** as a logged-in user, the application successfully redirected to the Checkout page. The page displayed the Delivery Address and Billing Address sections, followed by the Review Your Order section showing the products in tabular form with the total amount. An order comment section was also displayed.
@@ -593,14 +593,16 @@ The Register / Login hyperlink redirected the user to the Signup / Login page su
 
 **Steps:**
 
-1. Add a product to the Cart while logged out.
-2. Click Proceed To Checkout.
-3. Log in using valid credentials.
-4. Return to the Checkout flow.
-5. Observe the Cart contents.
+1. Ensure the user is logged out.
+2. Add a product to the Cart.
+3. Open the Cart and note the product, quantity, and price.
+4. Navigate to the Signup/Login page.
+5. Log in using valid credentials.
+6. Return to the Cart.
+7. Observe whether the previously added product is still present.
 
 **Expected Result:**
-The product previously added to the Cart should remain available after successful login.
+The product previously added to the Cart should remain available after successful login, with its quantity and relevant details retained.
 
 **Actual Result:**
 While logged out, the **Sleeveless Dress** was added to the Cart with quantity 1 and a total price of ₹1,000. After logging in with valid credentials and returning to the Cart, the Sleeveless Dress was still present with the correct quantity and price. The previously existing Blue Top and Men Tshirt were also retained in the Cart.
@@ -650,50 +652,13 @@ Review Your Order displayed the products and their relevant price, quantity, and
 
 ---
 
-## TC-CART-018 – Verify Checkout order summary details
-
-**Scenario:** TS-CART-12
-
-| Field         | Details                  |
-| ------------- | ------------------------ |
-| Test Case ID  | TC-CART-018              |
-| Priority      | High                     |
-| Preconditions | User is on Checkout page |
-| Test Data     | Multiple Cart products   |
-
-**Steps:**
-
-1. Observe the Review Your Order table.
-2. Verify product description.
-3. Verify price.
-4. Verify quantity.
-5. Verify product total.
-6. Verify overall order total.
-
-**Expected Result:**
-The Checkout order summary should correctly display the products, quantities, prices, individual totals, and overall order total.
-
-**Actual Result:**
-To be updated during formal execution.
-
-**Status:**
-NOT EXECUTED
-
-**Defect ID:**
-N/A
-
-**Comments:**
-To be updated after execution.
-
----
-
-## TC-CART-019 – Verify Delivery Address display
+## TC-CART-018 – Verify Delivery Address display
 
 **Scenario:** TS-CART-13
 
 | Field         | Details                                |
 | ------------- | -------------------------------------- |
-| Test Case ID  | TC-CART-019                            |
+| Test Case ID  | TC-CART-018                            |
 | Priority      | High                                   |
 | Preconditions | User is logged in and on Checkout page |
 | Test Data     | Registered test account                |
@@ -720,13 +685,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-020 – Verify Billing Address display
+## TC-CART-019 – Verify Billing Address display
 
 **Scenario:** TS-CART-13
 
 | Field         | Details                                |
 | ------------- | -------------------------------------- |
-| Test Case ID  | TC-CART-020                            |
+| Test Case ID  | TC-CART-019                            |
 | Priority      | High                                   |
 | Preconditions | User is logged in and on Checkout page |
 | Test Data     | Registered test account                |
@@ -753,13 +718,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-021 – Verify Order Comment field accepts blank input
+## TC-CART-020 – Verify Order Comment field accepts blank input
 
 **Scenario:** TS-CART-14
 
 | Field         | Details                  |
 | ------------- | ------------------------ |
-| Test Case ID  | TC-CART-021              |
+| Test Case ID  | TC-CART-020              |
 | Priority      | Medium                   |
 | Preconditions | User is on Checkout page |
 | Test Data     | Blank Order Comment      |
@@ -787,13 +752,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-022 – Verify Order Comment accepts text
+## TC-CART-021 – Verify Order Comment accepts text
 
 **Scenario:** TS-CART-14
 
 | Field         | Details                                           |
 | ------------- | ------------------------------------------------- |
-| Test Case ID  | TC-CART-022                                       |
+| Test Case ID  | TC-CART-021                                      |
 | Priority      | Medium                                            |
 | Preconditions | User is on Checkout page                          |
 | Test Data     | `Please handle the product carefully do not fold` |
@@ -822,13 +787,13 @@ Whether the comment is displayed or carried forward to a later page will be reco
 
 ---
 
-## TC-CART-023 – Verify Payment page fields
+## TC-CART-022 – Verify Payment page fields
 
 **Scenario:** TS-CART-15
 
 | Field         | Details                                         |
 | ------------- | ----------------------------------------------- |
-| Test Case ID  | TC-CART-023                                     |
+| Test Case ID  | TC-CART-022                                     |
 | Priority      | High                                            |
 | Preconditions | User has completed Checkout and reached Payment |
 | Test Data     | N/A                                             |
@@ -860,13 +825,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-024 – Verify mandatory validation for blank Name on Card
+## TC-CART-023 – Verify mandatory validation for blank Name on Card
 
 **Scenario:** TS-CART-16
 
 | Field         | Details                    |
 | ------------- | -------------------------- |
-| Test Case ID  | TC-CART-024                |
+| Test Case ID  | TC-CART-023                |
 | Priority      | High                       |
 | Preconditions | Payment page is accessible |
 | Test Data     | Name on Card: Blank        |
@@ -895,13 +860,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-025 – Verify mandatory validation for blank Card Number
+## TC-CART-024 – Verify mandatory validation for blank Card Number
 
 **Scenario:** TS-CART-16
 
 | Field         | Details                    |
 | ------------- | -------------------------- |
-| Test Case ID  | TC-CART-025                |
+| Test Case ID  | TC-CART-024                |
 | Priority      | High                       |
 | Preconditions | Payment page is accessible |
 | Test Data     | Card Number: Blank         |
@@ -931,13 +896,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-026 – Verify mandatory validation for blank CVC
+## TC-CART-025 – Verify mandatory validation for blank CVC
 
 **Scenario:** TS-CART-16
 
 | Field         | Details                    |
 | ------------- | -------------------------- |
-| Test Case ID  | TC-CART-026                |
+| Test Case ID  | TC-CART-025                |
 | Priority      | High                       |
 | Preconditions | Payment page is accessible |
 | Test Data     | CVC: Blank                 |
@@ -967,13 +932,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-027 – Verify mandatory validation for blank Expiration Month
+## TC-CART-026 – Verify mandatory validation for blank Expiration Month
 
 **Scenario:** TS-CART-16
 
 | Field         | Details                    |
 | ------------- | -------------------------- |
-| Test Case ID  | TC-CART-027                |
+| Test Case ID  | TC-CART-026                |
 | Priority      | High                       |
 | Preconditions | Payment page is accessible |
 | Test Data     | Expiration Month: Blank    |
@@ -1003,13 +968,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-028 – Verify mandatory validation for blank Expiration Year
+## TC-CART-027 – Verify mandatory validation for blank Expiration Year
 
 **Scenario:** TS-CART-16
 
 | Field         | Details                    |
 | ------------- | -------------------------- |
-| Test Case ID  | TC-CART-028                |
+| Test Case ID  | TC-CART-027                |
 | Priority      | High                       |
 | Preconditions | Payment page is accessible |
 | Test Data     | Expiration Year: Blank     |
@@ -1038,13 +1003,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-029 – Verify Payment field input format handling
+## TC-CART-028 – Verify Payment field input format handling
 
 **Scenario:** TS-CART-17
 
 | Field         | Details                     |
 | ------------- | --------------------------- |
-| Test Case ID  | TC-CART-029                 |
+| Test Case ID  | TC-CART-028                 |
 | Priority      | High                        |
 | Preconditions | Payment page is accessible  |
 | Test Data     | Inappropriate input formats |
@@ -1076,13 +1041,13 @@ Any acceptance of inappropriate input will be evaluated as a potential defect on
 
 ---
 
-## TC-CART-030 – Verify successful order placement with supported payment data
+## TC-CART-029 – Verify successful order placement with supported payment data
 
 **Scenario:** TS-CART-18
 
 | Field         | Details                                        |
 | ------------- | ---------------------------------------------- |
-| Test Case ID  | TC-CART-030                                    |
+| Test Case ID  | TC-CART-029                                    |
 | Priority      | High                                           |
 | Preconditions | User is logged in and has completed Checkout   |
 | Test Data     | Payment test data supported by the application |
@@ -1110,13 +1075,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-031 – Verify Order Confirmation message
+## TC-CART-030 – Verify Order Confirmation message
 
 **Scenario:** TS-CART-18
 
 | Field         | Details                               |
 | ------------- | ------------------------------------- |
-| Test Case ID  | TC-CART-031                           |
+| Test Case ID  | TC-CART-030                           |
 | Priority      | High                                  |
 | Preconditions | Order has been successfully submitted |
 | Test Data     | Successful order                      |
@@ -1143,13 +1108,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-032 – Verify Order Confirmation page information
+## TC-CART-031 – Verify Order Confirmation page information
 
 **Scenario:** TS-CART-19
 
 | Field         | Details                            |
 | ------------- | ---------------------------------- |
-| Test Case ID  | TC-CART-032                        |
+| Test Case ID  | TC-CART-031                        |
 | Priority      | High                               |
 | Preconditions | Order has been successfully placed |
 | Test Data     | Successful order                   |
@@ -1179,13 +1144,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-033 – Verify Download Invoice functionality
+## TC-CART-032 – Verify Download Invoice functionality
 
 **Scenario:** TS-CART-20
 
 | Field         | Details                            |
 | ------------- | ---------------------------------- |
-| Test Case ID  | TC-CART-033                        |
+| Test Case ID  | TC-CART-032                        |
 | Priority      | Medium                             |
 | Preconditions | Order has been successfully placed |
 | Test Data     | Successful order                   |
@@ -1214,13 +1179,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-034 – Verify Continue after Order Confirmation
+## TC-CART-033 – Verify Continue after Order Confirmation
 
 **Scenario:** TS-CART-21
 
 | Field         | Details                            |
 | ------------- | ---------------------------------- |
-| Test Case ID  | TC-CART-034                        |
+| Test Case ID  | TC-CART-033                        |
 | Priority      | Medium                             |
 | Preconditions | Order has been successfully placed |
 | Test Data     | Successful order                   |
@@ -1247,13 +1212,13 @@ To be updated after execution.
 
 ---
 
-## TC-CART-035 – Verify post-order order history or tracking availability
+## TC-CART-034 – Verify post-order order history or tracking availability
 
 **Scenario:** TS-CART-22
 
 | Field         | Details                                                |
 | ------------- | ------------------------------------------------------ |
-| Test Case ID  | TC-CART-035                                            |
+| Test Case ID  | TC-CART-034                                            |
 | Priority      | Low                                                    |
 | Preconditions | User is logged in and has successfully placed an order |
 | Test Data     | Successfully placed order                              |
@@ -1282,13 +1247,13 @@ If no such feature is available, the absence will be recorded as an observation 
 
 ---
 
-## TC-CART-036 – Verify Cart state after successful order placement
+## TC-CART-035 – Verify Cart state after successful order placement
 
 **Scenario:** TS-CART-18
 
 | Field         | Details                               |
 | ------------- | ------------------------------------- |
-| Test Case ID  | TC-CART-036                           |
+| Test Case ID  | TC-CART-035                           |
 | Priority      | Medium                                |
 | Preconditions | An order has been successfully placed |
 | Test Data     | Successfully placed order             |
@@ -1320,11 +1285,11 @@ The actual post-order Cart behavior will be recorded during formal execution.
 
 | Metric           | Result |
 | ---------------- | -----: |
-| Total Test Cases |     36 |
+| Total Test Cases |     35 |
 | Passed           |      0 |
 | Failed           |      0 |
 | Blocked          |      0 |
-| Not Executed     |     36 |
+| Not Executed     |     35 |
 | Defects Raised   |      0 |
 
 > The Cart & Checkout test cases have been prepared from the approved test scenarios. Formal execution results will be updated after testing against the live Automation Exercise application.
@@ -1357,7 +1322,7 @@ Any exploratory observation that does not have a clearly established expected be
 
 Detailed defect reports will be maintained in:
 
-`05-defect-reports.md`
+`defects/defect-reports.md`
 
 ---
 
@@ -1370,7 +1335,7 @@ If a genuine defect is identified and subsequently fixed:
 * Related functionality will be tested for regression.
 * Retesting and regression results will be documented separately in:
 
-`06-retesting-regression.md`
+`regression/retesting-regression.md`
 
 Until a defect is actually identified and fixed, no retesting or regression result will be recorded.
 
@@ -1427,17 +1392,17 @@ Test data will be selected appropriately during execution. Real payment card inf
 | TS-CART-09    | TC-CART-013                                                     |
 | TS-CART-10    | TC-CART-014, TC-CART-015                                        |
 | TS-CART-11    | TC-CART-016                                                     |
-| TS-CART-12    | TC-CART-017, TC-CART-018                                        |
-| TS-CART-13    | TC-CART-019, TC-CART-020                                        |
-| TS-CART-14    | TC-CART-021, TC-CART-022                                        |
-| TS-CART-15    | TC-CART-023                                                     |
-| TS-CART-16    | TC-CART-024, TC-CART-025, TC-CART-026, TC-CART-027, TC-CART-028 |
-| TS-CART-17    | TC-CART-029                                                     |
-| TS-CART-18    | TC-CART-030, TC-CART-031, TC-CART-036                           |
-| TS-CART-19    | TC-CART-032                                                     |
-| TS-CART-20    | TC-CART-033                                                     |
-| TS-CART-21    | TC-CART-034                                                     |
-| TS-CART-22    | TC-CART-035                                                     |
+| TS-CART-12    | TC-CART-017                                                     |
+| TS-CART-13    | TC-CART-018, TC-CART-019                                        |
+| TS-CART-14    | TC-CART-020, TC-CART-021                                        |
+| TS-CART-15    | TC-CART-022                                                     |
+| TS-CART-16    | TC-CART-023, TC-CART-024, TC-CART-025, TC-CART-026, TC-CART-027 |
+| TS-CART-17    | TC-CART-028                                                     |
+| TS-CART-18    | TC-CART-029, TC-CART-030                                        |
+| TS-CART-19    | TC-CART-031                                                     |
+| TS-CART-20    | TC-CART-032                                                     |
+| TS-CART-21    | TC-CART-033                                                     |
+| TS-CART-22    | TC-CART-034                                                     |
 
 ---
 
