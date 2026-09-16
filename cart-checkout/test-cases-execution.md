@@ -40,8 +40,9 @@ The objective of these test cases is to verify the Cart and Checkout functionali
 * Invoice download
 * Continue after order completion
 * Post-order order history or tracking availability
+* Cart state after successful order placement
 
-All Actual Results, Status, Defect ID, and Comments will be updated after executing the test cases against the live application.
+The test cases were executed against the live Automation Exercise application, and the Actual Results, Status, Defect ID, and Comments were recorded based on observed application behavior.
 
 ---
 
@@ -1303,13 +1304,13 @@ After successful order placement, the ordered product was removed from the Cart 
 | Metric           | Result |
 | ---------------- | -----: |
 | Total Test Cases |     35 |
-| Passed           |      0 |
-| Failed           |      0 |
+| Passed           |     34 |
+| Failed           |      1 |
 | Blocked          |      0 |
-| Not Executed     |     35 |
-| Defects Raised   |      0 |
+| Not Executed     |      0 |
+| Defects Raised   |      1 |
 
-> The Cart & Checkout test cases have been prepared from the approved test scenarios. Formal execution results will be updated after testing against the live Automation Exercise application.
+> All 35 Cart & Checkout test cases were executed against the live Automation Exercise application. One test case failed due to payment-field input validation behavior, and three reproducible defects were documented in Jira.
 
 ---
 
@@ -1326,18 +1327,23 @@ After successful order placement, the ordered product was removed from the Cart 
 
 # 7. Defect Handling
 
-A defect will be reported only when:
+A defect was reported when:
 
-* The test case is actually executed.
-* The observed behavior differs from the expected result.
-* The issue is reproducible.
-* The expected behavior can be reasonably established.
-* The issue is documented with appropriate details.
-* A Jira defect is created and linked to the relevant test case.
+* The test case was actually executed.
+* The observed behavior differed from the expected result.
+* The issue was reproducible.
+* The expected behavior could be reasonably established.
+* The issue was documented with appropriate details.
+* A Jira defect was created and linked to the relevant test case.
 
-Any exploratory observation that does not have a clearly established expected behavior will not automatically be classified as a defect.
+During Cart & Checkout execution, one reproducible defect was identified:
 
-Detailed defect reports will be maintained in:
+* **AEMQ-3 – Payment fields accept invalid input formats**
+* Related Test Case: **TC-CART-028**
+
+Exploratory observations that did not have a clearly established expected behavior were not automatically classified as defects.
+
+Detailed defect reports are maintained in:
 
 `defects/defect-reports.md`
 
@@ -1345,27 +1351,28 @@ Detailed defect reports will be maintained in:
 
 # 8. Retesting and Regression
 
-If a genuine defect is identified and subsequently fixed:
+During the current execution cycle, AEMQ-3 was identified and documented as a defect.
 
-* The failed test case will be executed again for retesting.
-* The test result will be updated in this document.
-* Related functionality will be tested for regression.
-* Retesting and regression results will be documented separately in:
+Retesting will be performed if the defect is fixed and a new build or updated application behavior is available.
+
+Related functionality will be tested for regression after the defect fix.
+
+Retesting and regression results will be documented separately in:
 
 `regression/retesting-regression.md`
 
-Until a defect is actually identified and fixed, no retesting or regression result will be recorded.
+No retesting result has been recorded in this execution cycle because the identified defect has not yet been confirmed as fixed.
 
 ---
 
 # 9. Test Data
 
-The following data categories will be used during Cart & Checkout testing:
+The following data categories were used during Cart & Checkout testing:
 
 | Data Type                | Description                                             |
 | ------------------------ | ------------------------------------------------------- |
-| Product 1                | Madame Top For Women – ₹400                             |
-| Product 2                | Summer White Top – ₹1,000                               |
+| Product 1                | Madame Top For Women                                    |
+| Product 2                | Summer White Top                                        |
 | Single quantity          | Quantity 1                                              |
 | Multiple quantity        | Quantity 3                                              |
 | Valid login credentials  | Registered test account                                 |
@@ -1379,7 +1386,7 @@ The following data categories will be used during Cart & Checkout testing:
 | Invalid Expiration Year  | Alphabetic input                                        |
 
 **Note:**
-Test data will be selected appropriately during execution. Real payment card information or other sensitive personal information will not be used in the public test documentation.
+Product prices were recorded based on the values displayed by the live application during individual test executions and may change when the application data is updated. Real payment card information or other sensitive personal information was not used in the public test documentation.
 
 ---
 
@@ -1415,7 +1422,7 @@ Test data will be selected appropriately during execution. Real payment card inf
 | TS-CART-15    | TC-CART-022                                                     |
 | TS-CART-16    | TC-CART-023, TC-CART-024, TC-CART-025, TC-CART-026, TC-CART-027 |
 | TS-CART-17    | TC-CART-028                                                     |
-| TS-CART-18    | TC-CART-029, TC-CART-030                                        |
+| TS-CART-18    | TC-CART-029, TC-CART-030, TC-CART-035                           |
 | TS-CART-19    | TC-CART-031                                                     |
 | TS-CART-20    | TC-CART-032                                                     |
 | TS-CART-21    | TC-CART-033                                                     |
@@ -1425,7 +1432,7 @@ Test data will be selected appropriately during execution. Real payment card inf
 
 # 12. Notes
 
-Test cases are derived from:
+Test cases were derived from:
 
 * Cart & Checkout exploratory testing observations
 * Approved Cart & Checkout test scenarios
@@ -1436,8 +1443,12 @@ Test cases are derived from:
 
 Official Automation Exercise test cases are not copied as project test cases.
 
-Exploratory observations are not automatically treated as defects. A defect will be reported only when the observed behavior can be confirmed to violate an applicable requirement or clearly defined expected behavior and the issue is reproducible.
+All 35 test cases were executed against the live Automation Exercise application.
 
-Actual results and execution statuses will be recorded based on formal testing performed against the live application.
+One reproducible defect was identified during execution and documented as:
 
-Retesting and regression results will be documented separately if a genuine defect is fixed in a future execution cycle.
+**AEMQ-3 – Payment fields accept invalid input formats**
+
+Exploratory observations were not automatically treated as defects. A defect was reported only when the observed behavior could be confirmed to violate the applicable expected behavior and the issue was reproducible.
+
+Retesting and regression results will be documented separately if the identified defect is fixed in a future execution cycle.
