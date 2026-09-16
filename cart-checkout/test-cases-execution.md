@@ -1285,16 +1285,16 @@ No order history or tracking feature was observed in the current application UI.
 The Cart should reflect the application's expected post-order state.
 
 **Actual Result:**
-To be updated during formal execution.
+The Shopping Cart was empty and displayed the message: “Cart is empty! Click here to buy products.”
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-The actual post-order Cart behavior will be recorded during formal execution.
+After successful order placement, the ordered product was removed from the Cart and the application displayed the empty cart message.
 
 ---
 
