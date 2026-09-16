@@ -1042,7 +1042,7 @@ After clicking Pay and Confirm Order, the application accepted the entered value
 FAIL
 
 **Defect ID:**
-To be raised
+AEMQ-3
 
 **Comments:**
 The application accepted inappropriate input formats for payment fields, including alphabetic values in Card Number, CVC, Expiration Month, and Expiration Year, and allowed the order to be placed successfully. This indicates insufficient client-side/payment-field format validation and should be reported as a defect. The issue was reproducible during execution.
