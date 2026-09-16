@@ -1060,6 +1060,14 @@ The application accepted inappropriate input formats for payment fields, includi
 | Preconditions | User is logged in and has completed Checkout   |
 | Test Data     | Payment test data supported by the application |
 
+**Test Data:**
+
+1. Name on Card: QA Tester
+2. Card Number: 4111111111111111
+3. CVC: 123
+4. Expiration Month: 12
+5. Expiration Year: 2030
+
 **Steps:**
 
 1. Enter payment information supported by the application.
@@ -1070,16 +1078,16 @@ The application accepted inappropriate input formats for payment fields, includi
 The application should process the order successfully and display an order confirmation.
 
 **Actual Result:**
-To be updated during formal execution.
+Valid-format payment test data was entered in all required payment fields. After clicking Pay and Confirm Order, the application displayed a success message indicating that the order had been placed successfully. The application then redirected to the Order Placed page displaying “Congratulations, your order has been confirmed.” The page also provided Download Invoice and Continue options.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The order was successfully placed using valid-format payment test data, and the Order Placed confirmation page was displayed correctly.
 
 ---
 
