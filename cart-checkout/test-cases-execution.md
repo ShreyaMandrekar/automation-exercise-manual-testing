@@ -919,16 +919,16 @@ Mandatory-field validation was triggered correctly for the blank Card Number fie
 The application should prevent submission and display mandatory-field validation for CVC.
 
 **Actual Result:**
-To be updated during formal execution.
+The Name on Card and Card Number fields were filled, while CVC, Expiration Month, and Expiration Year were left blank. After clicking Pay and Confirm Order, the application displayed the browser validation message “Please fill out this field.” for the CVC field and prevented further submission.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+Mandatory-field validation was triggered correctly for the blank CVC field, and the payment form did not proceed until the required field was entered.
 
 ---
 
