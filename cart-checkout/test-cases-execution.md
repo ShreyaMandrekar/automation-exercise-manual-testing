@@ -637,16 +637,16 @@ The product added to the Cart before login persisted after successful login, wit
 The Checkout page should display the Review Your Order section with the products included in the order.
 
 **Actual Result:**
-To be updated during formal execution.
+The Checkout page displayed the **Review Your Order** section with the Blue Top and Sleeveless Dress. Each product was displayed with its image, description, unit price, quantity, and total. The Blue Top had a price of ₹500 with quantity 1, and the Sleeveless Dress had a price of ₹1,000 with quantity 1. The overall order total was displayed as ₹1,500.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+Review Your Order displayed the products and their relevant price, quantity, and total information correctly. The overall order total was also calculated and displayed correctly.
 
 ---
 
