@@ -5,10 +5,10 @@
 | Field | Details |
 |---|---|
 | Project | Automation Exercise - Manual QA |
-| Module | Registration |
+| Module | Registration, Cart & Checkout |
 | Application | Automation Exercise |
 | Defect Tracking Tool | Jira |
-| Defects Identified | 2 |
+| Defects Identified | 3 |
 
 ---
 
@@ -18,6 +18,8 @@
 |---|---|---|---|---|---|
 | AEMQ-1 | TC-REG-021 | Zipcode field accepts invalid input formats without validation | Medium | Medium | Open |
 | AEMQ-2 | TC-REG-022 | Mobile Number field accepts invalid formats without validation | Medium | Medium | Open |
+| AEMQ-3 | TC-CART-028 | Payment fields accept invalid input formats | High | High | Open |
+
 
 ---
 
@@ -143,10 +145,76 @@ AEMQ-2
 
 ---
 
-## 5. Defect Reporting Notes
+## 5. Defect AEMQ-3
+
+### Summary
+Payment fields accept invalid input formats.
+
+### Related Test Case
+TC-CART-028 – Verify Payment field input format handling
+
+### Module
+Cart & Checkout
+
+### Severity
+High
+
+### Priority
+High
+
+### Status
+Open
+
+### Preconditions
+- User is logged in.
+- Products have been added to the Cart.
+- User has proceeded to the Checkout and Payment page.
+- Payment form is displayed.
+
+### Steps to Reproduce
+
+1. Add a product to the Cart.
+2. Proceed to Checkout.
+3. Navigate to the Payment page.
+4. Enter invalid input in the payment fields:
+   - Name on Card: `123`
+   - Card Number: `ABC`
+   - CVC: `ABC`
+   - Expiration Month: `AB`
+   - Expiration Year: `ABCD`
+5. Click Pay and Confirm Order.
+
+### Expected Result
+
+The payment fields should validate the entered values according to the expected input format and prevent order submission when invalid payment data is entered.
+
+### Actual Result
+
+The application accepted numeric input for Name on Card and alphabetic input for Card Number, CVC, Expiration Month, and Expiration Year without displaying format-validation messages. The order was successfully submitted.
+
+### Test Data
+
+| Field | Invalid Input | Result |
+|---|---|---|
+| Name on Card | `123` | Accepted |
+| Card Number | `ABC` | Accepted |
+| CVC | `ABC` | Accepted |
+| Expiration Month | `AB` | Accepted |
+| Expiration Year | `ABCD` | Accepted |
+
+### Evidence
+
+The defect was reproduced during actual test execution.
+
+### Jira
+AEMQ-3
+
+---
+
+## 6. Defect Reporting Notes
 
 - Defects were reported only after the relevant test cases were executed.
 - The observed behavior was reproduced during testing.
 - The defects are documented separately in Jira and linked to their corresponding test cases.
 - Severity and priority may be reassessed after business impact and requirements are formally confirmed.
-- Both defects are currently awaiting resolution and retesting.
+- AEMQ-1, AEMQ-2, and AEMQ-3 are currently awaiting resolution and retesting.
