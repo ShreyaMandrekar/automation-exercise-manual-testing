@@ -442,37 +442,39 @@ Last remaining product was removed successfully and the expected empty Cart mess
 
 ---
 
-## TC-CART-012 – Verify Continue On Cart functionality
+## TC-CART-012 – Verify Continue Shopping button in Add to Cart confirmation popup
 
 **Scenario:** TS-CART-08
 
-| Field         | Details                                 |
-| ------------- | --------------------------------------- |
-| Test Case ID  | TC-CART-012                             |
-| Priority      | Medium                                  |
-| Preconditions | At least one product is present in Cart |
-| Test Data     | Any Cart product                        |
+| Field         | Details                                      |
+| ------------- | -------------------------------------------- |
+| Test Case ID  | TC-CART-012                                  |
+| Priority      | Medium                                       |
+| Preconditions | Product details or Products page is accessible |
+| Test Data     | Any available product                        |
 
 **Steps:**
 
-1. Open the Cart.
-2. Click Continue On Cart.
-3. Observe the resulting page and Cart contents.
+1. Open the Products page or any product details page.
+2. Select a product and click **Add to Cart**.
+3. Observe the Add to Cart confirmation popup.
+4. Click the **Continue Shopping** button.
+5. Observe the page after the popup is closed.
 
 **Expected Result:**
-The user should remain on the Cart page and existing Cart contents should remain available.
+The Add to Cart confirmation popup should provide a **Continue Shopping** option. Clicking **Continue Shopping** should close the popup and allow the user to continue browsing products without navigating to the Cart.
 
 **Actual Result:**
-To be updated during formal execution.
+After adding a product to the Cart, the application displayed an Add to Cart confirmation popup with a **Continue Shopping** button. Clicking **Continue Shopping** closed the popup and kept the user on the current page, allowing continued shopping. When the product was added from the Products page, the user remained on the Products page; when added from the product details page, the user remained on the product details page.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+Continue Shopping functionality worked correctly. The user remained on the current shopping page after closing the Add to Cart confirmation popup.
 
 ---
 
