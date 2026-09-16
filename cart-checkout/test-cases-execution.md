@@ -774,16 +774,16 @@ The Order Comment field is optional, as the application allowed the order flow t
 The Order Comment should be accepted without preventing the order process.
 
 **Actual Result:**
-To be updated during formal execution.
+The comment Please handle the product carefully do not fold was entered successfully in the Order Comment field. After clicking Place Order, the application allowed the user to proceed to the Payment page. The entered comment was not carried forward or displayed on the Payment page.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-Whether the comment is displayed or carried forward to a later page will be recorded as an observation during execution.
+The Order Comment was accepted and did not prevent the order flow from proceeding. The comment was not visibly carried forward to the Payment page; this was recorded as an observation and was not treated as a defect because the test case does not define comment persistence as a required behavior.
 
 ---
 
