@@ -1216,16 +1216,16 @@ The invoice file was downloaded successfully, opened without errors, and contain
 The user should be redirected to the application's Home page.
 
 **Actual Result:**
-To be updated during formal execution.
+Clicking Continue redirected the user to the application's Home page successfully.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The Continue button redirected the user to the Home page successfully.
 
 ---
 
