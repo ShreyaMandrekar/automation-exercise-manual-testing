@@ -672,16 +672,16 @@ Review Your Order displayed the products and their relevant price, quantity, and
 The Delivery Address section should display the available address information associated with the user.
 
 **Actual Result:**
-To be updated during formal execution.
+The Delivery Address section displayed the user's address information, including Title, First Name, Last Name, Company, Address, Address 2, City, State, Zip Code, Country, and Mobile Number. No Edit/Change option was visible.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The Delivery Address section displayed the available address details associated with the logged-in user. No Edit/Change option was visible.
 
 ---
 
