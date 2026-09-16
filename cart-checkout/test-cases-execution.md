@@ -567,16 +567,16 @@ Logged-out users were prevented from proceeding directly to checkout and were pr
 The Register/Login link should redirect the user to the Signup/Login page.
 
 **Actual Result:**
-To be updated during formal execution.
+Clicking the **Register / Login** hyperlink in the checkout popup successfully redirected the user to the **Signup / Login page**.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The Register / Login hyperlink redirected the user to the Signup / Login page successfully.
 
 ---
 
