@@ -847,16 +847,16 @@ All required payment fields and the Pay and Confirm Order control were available
 The application should prevent submission and display mandatory-field validation for Name on Card.
 
 **Actual Result:**
-To be updated during formal execution.
+All payment fields were left blank and Pay and Confirm Order was clicked. The application displayed the browser validation message “Please fill out this field.” for the Name on Card field and prevented further submission.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+Mandatory-field validation was triggered correctly for the blank Name on Card field, and the payment form did not proceed until the required field was entered.
 
 ---
 
