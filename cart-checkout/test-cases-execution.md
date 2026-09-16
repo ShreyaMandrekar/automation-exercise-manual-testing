@@ -812,16 +812,16 @@ The Order Comment was accepted and did not prevent the order flow from proceedin
 The Payment page should display all required payment fields and the Pay and Confirm Order control.
 
 **Actual Result:**
-To be updated during formal execution.
+The Payment page displayed the Name on Card, Card Number, CVC, Expiration Month, and Expiration Year fields. The Pay and Confirm Order button was also displayed.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+All required payment fields and the Pay and Confirm Order control were available on the Payment page.
 
 ---
 
