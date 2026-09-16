@@ -603,16 +603,16 @@ The Register / Login hyperlink redirected the user to the Signup / Login page su
 The product previously added to the Cart should remain available after successful login.
 
 **Actual Result:**
-To be updated during formal execution.
+While logged out, the **Sleeveless Dress** was added to the Cart with quantity 1 and a total price of ₹1,000. After logging in with valid credentials and returning to the Cart, the Sleeveless Dress was still present with the correct quantity and price. The previously existing Blue Top and Men Tshirt were also retained in the Cart.
 
 **Status:**
-NOT EXECUTED
+PASS
 
 **Defect ID:**
 N/A
 
 **Comments:**
-To be updated after execution.
+The product added to the Cart before login persisted after successful login, with its quantity and price retained. Previously existing Cart products were also preserved.
 
 ---
 
