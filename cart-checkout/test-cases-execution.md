@@ -1028,16 +1028,24 @@ Mandatory-field validation was triggered correctly for the blank Expiration Year
 The application should apply appropriate input validation to payment fields according to the supported field format and validation rules.
 
 **Actual Result:**
-To be updated during formal execution.
+The following inappropriate values were entered:
+
+Name on Card: 123
+Card Number: ABC
+CVC: ABC
+Expiration Month: AB
+Expiration Year: ABCD
+
+After clicking Pay and Confirm Order, the application accepted the entered values without displaying any format-validation error and displayed a green success message indicating that the order had been placed successfully. After approximately two to three seconds, the application redirected to the Order Placed page displaying “Congratulations, your order has been confirmed.” with Download Invoice and Continue options.
 
 **Status:**
-NOT EXECUTED
+FAIL
 
 **Defect ID:**
-N/A
+To be raised
 
 **Comments:**
-Any acceptance of inappropriate input will be evaluated as a potential defect only if the expected validation behavior can be reasonably established and the issue is reproducible.
+The application accepted inappropriate input formats for payment fields, including alphabetic values in Card Number, CVC, Expiration Month, and Expiration Year, and allowed the order to be placed successfully. This indicates insufficient client-side/payment-field format validation and should be reported as a defect. The issue was reproducible during execution.
 
 ---
 
