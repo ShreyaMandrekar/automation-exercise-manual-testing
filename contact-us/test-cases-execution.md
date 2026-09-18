@@ -326,12 +326,16 @@ Valid email format was accepted and the Contact Us form was submitted successful
 The Name field should accept normal text input and the form should proceed without Name-related validation errors.
 
 **Actual Result:**
+The Name field accepted `Shreya`. After submitting the form, the confirmation dialog appeared. After clicking OK, the application displayed the message "Success! Your details have been submitted successfully."
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+Normal text input was accepted in the Name field and the form was submitted successfully.
 
 ---
 
