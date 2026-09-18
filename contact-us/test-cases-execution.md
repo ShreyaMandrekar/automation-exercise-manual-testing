@@ -806,12 +806,16 @@ The OK action worked successfully and the form submission was completed.
 The confirmation dialog should close and the submission should not be completed.
 
 **Actual Result:**
+After clicking Cancel in the confirmation dialog, the dialog disappeared and the Contact Us page remained open. The entered Name and Email data were still present in their respective fields and were not cleared.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The Cancel action worked successfully. The form remained on the same page and the entered data was retained.
 
 ---
 
