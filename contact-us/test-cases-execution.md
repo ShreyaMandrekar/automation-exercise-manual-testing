@@ -290,12 +290,16 @@ The incomplete email format was rejected by email validation.
 The valid email address should be accepted without email-format validation errors.
 
 **Actual Result:**
+The valid email address `test@example.com` was accepted. After clicking Submit, a confirmation dialog asking "Press OK to proceed!" was displayed. After clicking OK, the application displayed the message "Success! Your details have been submitted successfully."
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+Valid email format was accepted and the Contact Us form was submitted successfully without email-format validation errors.
 
 ---
 
