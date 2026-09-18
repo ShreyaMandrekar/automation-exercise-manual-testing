@@ -472,12 +472,16 @@ Normal text input was accepted in the Subject field and the form was submitted s
 The application should handle the entered Subject value consistently without unexpected application errors.
 
 **Actual Result:**
+The Subject field accepted the value `Order#123!`, and the Contact Us form was submitted successfully. The success message was displayed.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The Subject field accepted numbers and special characters, and the form was submitted successfully. This is recorded as observed behavior and is not treated as a defect because no requirement specifies that such characters must be rejected.
 
 ---
 
