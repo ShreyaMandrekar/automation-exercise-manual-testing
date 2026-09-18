@@ -76,11 +76,19 @@ The Contact Us page should be displayed successfully.
 
 **Actual Result:**
 
+The Contact Us page opened successfully. All Contact Us form fields were displayed properly, and the "Feedback for Us" section was also visible.
+
 **Status:**
+
+PASS
 
 **Defect ID:**
 
+N/A
+
 **Comments:**
+
+Contact Us page and its main UI elements were displayed successfully.
 
 ---
 
