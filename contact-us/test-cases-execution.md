@@ -916,12 +916,16 @@ The form successfully supported resubmission after a cancelled submission.
 The Contact Us form should be submitted successfully and a successful submission confirmation should be displayed.
 
 **Actual Result:**
+After clicking OK in the confirmation dialog, the application displayed the success page with the message "Success! Your detail has been submitted successfully." A Home button was also displayed.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The Contact Us form was submitted successfully and the success confirmation page was displayed with a Home button.
 
 ---
 
