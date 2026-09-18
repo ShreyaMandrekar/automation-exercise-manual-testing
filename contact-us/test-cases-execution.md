@@ -362,12 +362,16 @@ Normal text input was accepted in the Name field and the form was submitted succ
 The Name field should accept the entered input without unexpected validation or application errors.
 
 **Actual Result:**
+The Name field accepted the alphanumeric value `Shreya123`. After submitting the form, the confirmation dialog appeared. After clicking OK, the application displayed the message "Success! Your details have been submitted successfully."
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+Alphanumeric input was accepted in the Name field and the form was submitted successfully.
 
 ---
 
