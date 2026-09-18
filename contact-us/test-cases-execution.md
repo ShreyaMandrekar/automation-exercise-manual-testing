@@ -771,12 +771,16 @@ The confirmation dialog was displayed successfully. The Cancel action was also a
 The confirmation dialog should close and the Contact Us submission should proceed successfully.
 
 **Actual Result:**
+After clicking OK in the confirmation dialog, the dialog disappeared and the application displayed the success message.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The OK action worked successfully and the form submission was completed.
 
 ---
 
