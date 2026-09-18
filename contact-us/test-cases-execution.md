@@ -9,7 +9,7 @@
 | Testing Type     | Manual Testing                             |
 | Test Level       | System Testing                             |
 | Test Approach    | Functional, Positive, Negative, Validation |
-| Test Case Status | Not Executed                               |
+| Test Case Status | Executed                                   |
 | Tester           | Shreya Mandrekar                           |
 
 ---
@@ -36,7 +36,7 @@ The objective of these test cases is to verify the Contact Us functionality of t
 * Success confirmation
 * Home navigation after successful submission
 
-All Actual Results, Status, Defect ID, and Comments will be updated after executing the test cases against the live application.
+All test cases were executed against the live application, and Actual Results, Status, Defect ID, and Comments were recorded based on the observed application behavior.
 
 ---
 
@@ -177,8 +177,7 @@ Feedback section and email contact information were displayed properly.
 
 1. Open the Contact Us page.
 2. Leave the Email field blank.
-3. Enter the required information in other fields.
-4. Click Submit.
+3. Click Submit.
 
 **Expected Result:**
 
@@ -282,8 +281,10 @@ The incomplete email format was rejected by email validation.
 **Steps:**
 
 1. Enter `test@example.com` in the Email field.
-2. Complete the required fields.
-3. Submit the form.
+2. Enter valid values in the other required fields.
+3. Click Submit.
+4. Click OK in the confirmation dialog.
+5. Observe the result.
 
 **Expected Result:**
 
@@ -701,7 +702,7 @@ The `.jpg` image file was accepted successfully and the Contact Us form was subm
 The form should apply mandatory validation only to fields that are required and should not prevent submission solely because optional fields are blank.
 
 **Actual Result:**
-The Name, Subject, and Message fields were left blank, and no file was selected. Only the Email field was entered with test@example.com. After clicking Submit, the confirmation dialog appeared. After clicking OK, the application displayed the success message.
+The Name, Subject, and Message fields were left blank, and no file was selected. Only the Email field was entered with `test@example.com`. After clicking Submit, the confirmation dialog appeared. After clicking OK, the application displayed the success message.
 
 **Status:**
 PASS
@@ -964,16 +965,20 @@ The Home button navigation worked successfully and opened the Automation Exercis
 
 ---
 
-# 5. Test Execution Summary
+# 5. Execution Summary
 
-| Metric             | Result |
-| ------------------ | ------ |
-| Total Test Cases   | 25     |
-| Passed             |        |
-| Failed             |        |
-| Blocked            |        |
-| Not Executed       | 25     |
-| Defects Identified |        |
+| Metric              | Result |
+| ------------------- | ------ |
+| Total Test Cases    | 25     |
+| Passed              | 25     |
+| Failed              | 0      |
+| Blocked             | 0      |
+| Not Executed        | 0      |
+| Defects Identified  | 0      |
+
+**Overall Result:** PASS
+
+All 25 Contact Us test cases were executed against the live Automation Exercise application. All test cases passed, and no genuine reproducible defects were identified during execution.
 
 ---
 
@@ -1002,13 +1007,16 @@ If the Actual Result differs from the Expected Result during execution:
 5. Add the Jira Defect ID to the relevant test case.
 6. Record relevant details in the defect report.
 
+No genuine reproducible defects were identified during execution of the Contact Us module.
+
 ---
 
 # 8. Execution Notes
 
-* Test cases will be executed against the live Automation Exercise application.
-* Actual Results will contain the behavior observed during execution.
-* Status will be updated as PASS, FAIL, BLOCKED, or NOT EXECUTED.
-* Defect IDs will be added only when genuine reproducible defects are identified.
-* Observations will not automatically be treated as defects without a defined requirement or clear expected behavior.
-* Retesting and regression testing will be documented separately after defects are fixed.
+* Test cases were executed against the live Automation Exercise application.
+* Actual Results were recorded based on the behavior observed during execution.
+* Status was recorded as PASS, FAIL, BLOCKED, or NOT EXECUTED.
+* Defect IDs were added only when genuine reproducible defects were identified.
+* Observations were not automatically treated as defects without a defined requirement or clear expected behavior.
+* No genuine reproducible defects were identified during Contact Us module execution.
+* Retesting and regression testing will be documented separately if defects are fixed in the future.
