@@ -149,12 +149,16 @@ All expected Contact Us form fields and controls were present and displayed prop
 The Feedback section and displayed contact information should be visible.
 
 **Actual Result:**
+The Feedback for Us section was displayed successfully, and the email address was also visible.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+Feedback section and email contact information were displayed properly.
 
 ---
 
