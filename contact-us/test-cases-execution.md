@@ -584,12 +584,16 @@ The long message was accepted and the Contact Us form was submitted successfully
 The form should allow submission without a file if file upload is optional.
 
 **Actual Result:**
+No file was selected. The Contact Us form was submitted successfully, and after proceeding through the confirmation dialog, the success message was displayed.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The form allowed successful submission without selecting a file.
 
 ---
 
