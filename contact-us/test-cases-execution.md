@@ -435,12 +435,16 @@ The Name field accepted numbers and special characters, and the form was submitt
 The Subject field should accept normal text input without unexpected validation errors.
 
 **Actual Result:**
+The Subject field accepted `Product Inquiry`, and the Contact Us form was submitted successfully. The success message was displayed.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+Normal text input was accepted in the Subject field and the form was submitted successfully.
 
 ---
 
