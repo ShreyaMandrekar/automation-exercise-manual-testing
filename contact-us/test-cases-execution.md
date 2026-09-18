@@ -623,12 +623,16 @@ The form allowed successful submission without selecting a file.
 The selected text file should be accepted and the form should proceed according to the application's behavior.
 
 **Actual Result:**
+The `.txt` text file was accepted successfully. After submitting the form, the confirmation dialog appeared. After clicking OK, the application displayed the success message "Success! Your details have been submitted successfully."
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The text file was accepted successfully and the Contact Us form was submitted without any visible file-upload issue.
 
 ---
 
