@@ -398,12 +398,16 @@ Alphanumeric input was accepted in the Name field and the form was submitted suc
 The application should handle the entered Name value consistently without unexpected application errors.
 
 **Actual Result:**
+The Name field accepted the value `Shreya@123!`. After submitting the form, the confirmation dialog appeared. After clicking OK, the application displayed the message "Success! Your details have been submitted successfully."
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The Name field accepted numbers and special characters, and the form was submitted successfully. This is recorded as an observed behavior and not treated as a defect because no requirement specifies that such characters must be rejected.
 
 ---
 
