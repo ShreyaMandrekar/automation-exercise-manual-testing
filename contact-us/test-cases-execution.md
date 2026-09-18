@@ -114,12 +114,16 @@ Contact Us page and its main UI elements were displayed successfully.
 The Contact Us form should contain the expected fields and controls, including Name, Email, Subject, Message, Choose File, and Submit.
 
 **Actual Result:**
+The Contact Us form displayed the Name, Email, Subject, Your Message Here, Choose File, and Submit button correctly.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+All expected Contact Us form fields and controls were present and displayed properly.
 
 ---
 
