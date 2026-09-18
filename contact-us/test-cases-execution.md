@@ -255,12 +255,16 @@ Invalid email format without the `@` symbol was rejected by email validation.
 The incomplete email format should be rejected and appropriate email validation should be displayed.
 
 **Actual Result:**
+The Email field was entered with `test@`. A browser validation popup appeared stating, "Please enter a part following the '@'. 'test@' is incomplete."
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The incomplete email format was rejected by email validation.
 
 ---
 
