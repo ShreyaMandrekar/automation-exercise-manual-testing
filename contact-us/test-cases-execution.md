@@ -662,12 +662,16 @@ The text file was accepted successfully and the Contact Us form was submitted wi
 The selected image file should be accepted and the form should proceed according to the application's behavior.
 
 **Actual Result:**
+The `.jpg` image file was selected successfully. After submitting the form, the confirmation dialog appeared. After clicking OK, the application displayed the success message "Success! Your details have been submitted successfully."
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The `.jpg` image file was accepted successfully and the Contact Us form was submitted without any visible file-upload issue.
 
 ---
 
