@@ -736,12 +736,16 @@ The form was submitted successfully with only the Email field populated. No vali
 A confirmation dialog should be displayed before the Contact Us submission is completed.
 
 **Actual Result:**
+After entering the valid Name and Email and clicking Submit, the confirmation dialog was displayed successfully.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The confirmation dialog was displayed successfully. The Cancel action was also available in the dialog.
 
 ---
 
