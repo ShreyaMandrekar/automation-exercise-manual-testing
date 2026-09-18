@@ -701,12 +701,16 @@ The `.jpg` image file was accepted successfully and the Contact Us form was subm
 The form should apply mandatory validation only to fields that are required and should not prevent submission solely because optional fields are blank.
 
 **Actual Result:**
+The Name, Subject, and Message fields were left blank, and no file was selected. Only the Email field was entered with test@example.com. After clicking Submit, the confirmation dialog appeared. After clicking OK, the application displayed the success message.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The form was submitted successfully with only the Email field populated. No validation prevented submission because the other fields were blank. This confirms the observed behavior that those fields are not mandatory for submission. No defect was identified.
 
 ---
 
