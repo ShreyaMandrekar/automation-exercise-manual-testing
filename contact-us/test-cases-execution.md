@@ -509,12 +509,16 @@ The Subject field accepted numbers and special characters, and the form was subm
 The Message field should accept normal text input and the form should proceed without unexpected validation errors.
 
 **Actual Result:**
+The Message field accepted `I need help with my order.` and the Contact Us form was submitted successfully. The success message was displayed.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+Normal text input was accepted in the Message field and the form was submitted successfully.
 
 ---
 
