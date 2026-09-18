@@ -546,12 +546,16 @@ Normal text input was accepted in the Message field and the form was submitted s
 The application should accept the Message input according to its defined field constraints and should not produce an unexpected application error.
 
 **Actual Result:**
+The complete long message was accepted in the Message field without any visible truncation or validation error. After submitting the form, the confirmation dialog appeared. After clicking OK, the application displayed the success message "Success! Your details have been submitted successfully."
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The long message was accepted and the Contact Us form was submitted successfully. No visible character-limit issue was observed.
 
 ---
 
