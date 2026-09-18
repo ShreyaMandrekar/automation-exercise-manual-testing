@@ -842,12 +842,16 @@ The Cancel action worked successfully. The form remained on the same page and th
 The entered form data should remain available after cancelling the submission unless the application is designed to clear the form.
 
 **Actual Result:**
+After clicking Cancel in the confirmation dialog, the Name and Email fields still contained the previously entered values.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The entered Name and Email data remained intact after cancelling the submission.
 
 ---
 
