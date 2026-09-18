@@ -867,3 +867,274 @@ The observations from this exploration will be used as input for designing the f
 
 The observations from this exploration will be used as input for designing the formal Products test scenarios and detailed test cases.
 
+---
+
+# Contact Us – Exploratory Observations
+
+## Contact Us Page
+
+The Contact Us section is accessible from the main navigation of the Automation Exercise application.
+
+The Contact Us page contains:
+
+* Name field
+* Email field
+* Subject field
+* Your Message Here field
+* Choose File option
+* Submit button
+* Feedback For Us informational section
+* Feedback email address
+* Test Case Templates link/button
+
+The right side of the page displays feedback-related information and the email address:
+
+**[feedback@automationexercise.com](mailto:feedback@automationexercise.com)**
+
+A **Test Case Templates** link/button was also visible above the contact form.
+
+---
+
+## Contact Us Form Fields
+
+The following fields and controls were observed during exploration:
+
+| Field / Control   | Type                 | Observation                                                                                                               |
+| ----------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Name              | Text field           | Optional during the observed interaction. Normal text, alphanumeric input, numbers and special characters were accepted.  |
+| Email             | Email field          | Required. Blank and invalid email formats were rejected by browser-level validation.                                      |
+| Subject           | Text field           | Optional during the observed interaction. Normal text, numbers and special characters were accepted.                      |
+| Your Message Here | Multiline text field | Optional during the observed interaction. Normal and long text were accepted. No visible length restriction was observed. |
+| Choose File       | File upload          | Optional during the observed interaction. Text and image files were accepted.                                             |
+| Submit            | Button               | Submits the Contact Us form after required validation and confirmation handling.                                          |
+
+---
+
+## Name Field Behavior
+
+The Name field was explored using different types of input.
+
+Observed behavior:
+
+* Leaving the Name field blank did not prevent the form from being submitted when a valid email address was provided.
+* Normal text was accepted.
+* Alphanumeric input was accepted.
+* Numbers and special characters were also accepted.
+* The form was successfully submitted with these observed Name values.
+
+The Name field behavior was recorded as an observation and was not classified as a defect because no explicit requirement was available stating that the field must accept alphabetic characters only.
+
+---
+
+## Email Validation
+
+The Email field was identified as a mandatory field during exploration.
+
+### Blank Email
+
+When the form was submitted without entering an Email value:
+
+* The Name field was skipped.
+* The Email field was highlighted.
+* The browser displayed:
+  **“Please fill out this field.”**
+
+The form did not proceed until an Email value was entered.
+
+### Invalid Email Without @
+
+The value:
+
+`test`
+
+was entered in the Email field.
+
+The browser displayed:
+
+**“Please include an @ symbol in the email address. Test is missing an @ symbol.”**
+
+### Incomplete Email Ending With @
+
+The value:
+
+`test@`
+
+was entered.
+
+The browser displayed a validation message indicating that a part following `@` was required and that the email address was incomplete.
+
+### Valid Email
+
+The value:
+
+`test@example.com`
+
+was entered.
+
+The Email field accepted the value and the form was allowed to proceed.
+
+The observed behavior indicates that the Email field performs browser-level mandatory and email-format validation.
+
+---
+
+## Subject Field Behavior
+
+The Subject field was explored using different input types.
+
+Observed behavior:
+
+* Normal text was accepted.
+* Numbers and special characters were accepted.
+* The form was successfully submitted with these observed Subject values.
+* Leaving the Subject field blank did not prevent successful submission when a valid Email was provided.
+
+The Subject field was therefore observed as optional during exploration.
+
+---
+
+## Message Field Behavior
+
+The **Your Message Here** field was explored using different message lengths and input values.
+
+Observed behavior:
+
+* Normal text was accepted.
+* The form could be submitted with a normal message.
+* A long message was also accepted.
+* No visible character or length restriction was observed during exploration.
+* Leaving the Message field blank did not prevent successful form submission when a valid Email was provided.
+
+The Message field was therefore observed as optional during exploration.
+
+---
+
+## File Upload
+
+The Choose File control was explored with and without a file.
+
+### Without File
+
+The form was submitted without selecting a file.
+
+The submission was successful.
+
+The file upload was therefore observed as optional.
+
+### Text File
+
+A text file was selected using the Choose File control.
+
+The form accepted the selected file and was submitted successfully.
+
+### Image File
+
+An image file was selected using the Choose File control.
+
+The form accepted the selected image file and was submitted successfully.
+
+No visible file-type restriction was observed for the tested text and image files.
+
+No file-size restriction was observed during the exploration.
+
+---
+
+## Contact Form Submission
+
+The form was submitted using valid Email data with different combinations of optional fields.
+
+Observed behavior:
+
+* The form could be submitted with the Name field blank.
+* The form could be submitted with the Subject field blank.
+* The form could be submitted with the Message field blank.
+* The form could be submitted without selecting a file.
+* The form could be submitted with normal values in the available fields.
+* The form could be submitted with an attached text file.
+* The form could be submitted with an attached image file.
+
+After successful submission, the application displayed:
+
+**“Success, your detail has been submitted successfully.”**
+
+A **Home** button was displayed below the success message.
+
+---
+
+## Submit Confirmation Dialog
+
+When the Contact Us form was submitted with entered details, a confirmation dialog was displayed:
+
+**“Please press OK to proceed.”**
+
+### Selecting OK
+
+When **OK** was selected:
+
+* The confirmation dialog was closed.
+* The Contact Us form was submitted successfully.
+* The message **“Success, your detail has been submitted successfully.”** was displayed.
+* A Home button was displayed.
+
+### Selecting Cancel
+
+When **Cancel** was selected:
+
+* The submission was cancelled.
+* The user remained on the Contact Us page.
+* The previously entered form details remained populated.
+* The success message was not displayed.
+* The form could be submitted again.
+* Selecting Submit again and then OK successfully submitted the form.
+
+The entered form data was therefore retained after cancelling the confirmation dialog during the observed interaction.
+
+---
+
+## Home Navigation After Submission
+
+After successful Contact Us form submission, the application displayed a **Home** button.
+
+Selecting the Home button redirected the user to the Home page.
+
+---
+
+## Observations Requiring Further Formal Testing
+
+The following behaviors were identified during Contact Us exploratory testing and should be investigated through formal test cases:
+
+* Contact Us page accessibility.
+* Display of all Contact Us fields and controls.
+* Email mandatory-field validation.
+* Email format validation.
+* Optional behavior of Name, Subject and Message fields.
+* Name input handling for different character types.
+* Subject input handling for different character types.
+* Long Message input handling.
+* File upload with no file selected.
+* File upload with text files.
+* File upload with image files.
+* Successful Contact Us form submission.
+* Submit confirmation dialog.
+* Confirmation dialog OK behavior.
+* Confirmation dialog Cancel behavior.
+* Retention of entered data after Cancel.
+* Success message after submission.
+* Home navigation after successful submission.
+
+These observations are **not automatically classified as defects**. They should be compared with the applicable expected results and formally executed before raising any defect.
+
+---
+
+# Exploratory Testing Conclusion
+
+The Contact Us functionality was explored across:
+
+**Contact Us Page → Form Fields → Email Validation → Optional Fields → File Upload → Submit → Confirmation Dialog → OK / Cancel → Success Message → Home Navigation**
+
+The exploration covered the main Contact Us form components, mandatory and optional field behavior, email validation, different input types, file upload behavior, confirmation handling, successful submission, data retention after cancellation, and navigation after successful submission.
+
+No defect was classified during exploratory testing based solely on these observations. Any potential validation issue should be evaluated against the expected behavior during formal test execution.
+
+The observations from this exploration will be used as input for designing the formal **Contact Us test scenarios and detailed test cases**.
+
+
