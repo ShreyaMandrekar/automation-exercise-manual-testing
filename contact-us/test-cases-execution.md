@@ -185,12 +185,16 @@ Feedback section and email contact information were displayed properly.
 The submission should be prevented and mandatory validation should be displayed for the Email field.
 
 **Actual Result:**
+The Email field was left blank and the Submit button was clicked. A browser validation popup appeared stating, "Please fill out this field." The validation was displayed for the Email field.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+Mandatory validation was displayed correctly when the Email field was left blank.
 
 ---
 
