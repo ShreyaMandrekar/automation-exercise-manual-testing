@@ -951,12 +951,16 @@ The Contact Us form was submitted successfully and the success confirmation page
 The Home button should redirect the user to the Automation Exercise homepage.
 
 **Actual Result:**
+After clicking the Home button, the application navigated to the Automation Exercise Home page successfully.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The Home button navigation worked successfully and opened the Automation Exercise Home page.
 
 ---
 
