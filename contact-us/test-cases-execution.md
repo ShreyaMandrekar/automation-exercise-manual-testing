@@ -879,12 +879,16 @@ The entered Name and Email data remained intact after cancelling the submission.
 The form should allow the user to resubmit the contact information after cancelling the previous submission.
 
 **Actual Result:**
+After cancelling the first submission, the form could be submitted again. The same confirmation dialog appeared, and after clicking OK, the form was successfully resubmitted.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The form successfully supported resubmission after a cancelled submission.
 
 ---
 
