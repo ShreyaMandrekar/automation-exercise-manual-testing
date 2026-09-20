@@ -90,12 +90,16 @@ The User Login API successfully verified the valid registered credentials and re
 The API should return HTTP status **200 OK** with `responseCode: 404` and the response message should be **`User not found!`**.
 
 **Actual Result:**
+The POST request returned HTTP status 404 Not Found. The response contained responseCode: 404 with the message "User not found!". The observed response time was 1.12 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly rejected the invalid login credentials and returned the expected User not found! response.
 
 ---
 
