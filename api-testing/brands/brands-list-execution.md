@@ -87,20 +87,16 @@ The Brands List API returned the expected successful response and brand data.
 Returned brand records should have the expected data structure, including applicable fields such as ID and brand name. Brand IDs should be unique.
 
 **Actual Result:**
-
-...
+Multiple brand records were present in the brands collection, with brand IDs ranging from 1 to 43. The brand records contained id and brand fields, and the brand IDs were unique. The response contained responseCode: 200 with HTTP status 200 OK. The observed response time was 1.96 seconds.
 
 **Status:**
-
-...
+PASS
 
 **Defect ID:**
-
-...
+N/A
 
 **Comments:**
-
-...
+The brand data structure and applicable brand fields were present as expected, and the brand IDs were unique.
 
 ---
 
