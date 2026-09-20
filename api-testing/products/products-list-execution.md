@@ -87,20 +87,16 @@ The Products List API returned the expected successful response and product data
 Returned product records should have the expected data structure, including applicable fields such as ID, name, price, brand, and category. Product IDs should be unique.
 
 **Actual Result:**
-
-...
+Multiple product records were present in the products collection. The product records contained applicable fields including id, name, price, brand, user_type, and category. A total of 43 product records were observed, and the product IDs were unique.
 
 **Status:**
-
-...
+PASS
 
 **Defect ID:**
-
-...
+N/A
 
 **Comments:**
-
-...
+The product data structure and applicable product fields were present as expected.
 
 ---
 
