@@ -123,20 +123,16 @@ The brand data structure and applicable brand fields were present as expected, a
 The API should reject the unsupported POST method and return the documented response for the unsupported request method.
 
 **Actual Result:**
-
-...
+The POST request returned HTTP status 200 OK with responseCode: 405. The response message displayed “This request method is not supported.” The observed response time was 1.80 seconds.
 
 **Status:**
-
-...
+PASS
 
 **Defect ID:**
-
-...
+N/A
 
 **Comments:**
-
-...
+The API correctly rejected the unsupported POST method and returned the expected method-not-supported response.
 
 ---
 
