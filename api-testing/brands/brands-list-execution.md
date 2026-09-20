@@ -50,20 +50,16 @@ To verify the Brands List API functionality, response structure, brand data, han
 The API should successfully process the GET request and return the expected Brands List response with HTTP 200, a successful `responseCode`, a `brands` collection, and applicable brand information.
 
 **Actual Result:**
-
-...
+he GET request was successfully processed with HTTP status 200 OK. The response contained responseCode: 200, the brands collection was present, and brand records displayed applicable information including id and brand. The observed response time was 1.62 seconds.
 
 **Status:**
-
-...
+PASS
 
 **Defect ID:**
-
-...
+N/A
 
 **Comments:**
-
-...
+The Brands List API returned the expected successful response and brand data.
 
 ---
 
