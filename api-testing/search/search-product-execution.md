@@ -243,12 +243,16 @@ The API correctly handled the missing search parameter by returning a 400 respon
 The API should handle the invalid or unsupported search parameter according to its implemented/documented behavior and return an appropriate response.
 
 **Actual Result:**
+The POST request returned HTTP status 200 OK with responseCode: 400. The response message stated Bad Request, search product parameter is missing in POST request. The request used an unsupported parameter named invalid_parameter instead of the required search_product parameter. The observed response time was 1.14 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API rejected the request because the required search_product parameter was not provided. The API did not specifically identify the unsupported parameter name in the error message.
 
 ---
 
