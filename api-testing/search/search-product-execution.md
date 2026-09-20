@@ -53,12 +53,16 @@ To verify the Search Product API functionality, search parameter handling, respo
 The API should successfully process the search request and return the expected response with an appropriate HTTP status, successful `responseCode`, and a product collection containing products relevant to the search term.
 
 **Actual Result:**
+The POST request was successfully processed with HTTP status 200 OK. The response contained responseCode: 200 and returned product records matching the search term top. The returned products included IDs 1, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 18, 24, and 42, and the product names contained the search term top. The observed response time was 1.65 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The Search Product API returned products relevant to the supplied search term as expected.
 
 ---
 
