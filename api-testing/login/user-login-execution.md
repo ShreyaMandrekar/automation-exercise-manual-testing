@@ -50,12 +50,16 @@ To verify the User Login API functionality, credential validation, required para
 The API should return HTTP status **200 OK** with `responseCode: 200` and the response message should be **`User exists!`**.
 
 **Actual Result:**
+The POST request was successfully processed with HTTP status 200 OK. The response contained responseCode: 200 with the message "User exists!". The observed response time was 1.20 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The User Login API successfully verified the valid registered credentials and returned the expected response.
 
 ---
 
