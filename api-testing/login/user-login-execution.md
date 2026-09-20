@@ -168,12 +168,16 @@ The API correctly handled the missing email parameter and returned the expected 
 The API should return HTTP status **200 OK** with `responseCode: 405` and the response message should be **`This request method is not supported.`**
 
 **Actual Result:**
+The DELETE request returned HTTP status 200 OK with responseCode: 405. The response message stated This request method is not supported. The observed response time was 1.34 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly rejected the unsupported DELETE method and returned the expected 405 response code with the appropriate message.
 
 ---
 
