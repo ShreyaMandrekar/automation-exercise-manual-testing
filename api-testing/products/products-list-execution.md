@@ -209,7 +209,6 @@ All 4 Products List API test cases were executed against the live Automation Exe
 * HTTP status codes, response body, response structure, and applicable response data were validated.
 * Response time was recorded as an observation during execution.
 * No performance threshold was defined for this project.
-* Defect IDs were added only when genuine reproducible defects were identified.
 * All 4 Products List API test cases were executed and completed.
 * No genuine reproducible defects were identified during Products List API execution.
 * Retesting and regression testing will be documented separately if defects are identified and subsequently fixed.
