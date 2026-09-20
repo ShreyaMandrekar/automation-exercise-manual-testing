@@ -10,7 +10,7 @@
 | HTTP Method      | POST                              |
 | Tool             | Postman                           |
 | Test Type        | API Testing                       |
-| Test Case Status | Not Executed                      |
+| Test Case Status | Executed                          |
 | Tester           | Shreya Mandrekar                  |
 
 ---
@@ -261,13 +261,13 @@ The API rejected the request because the required search_product parameter was n
 | Metric             | Result |
 | ------------------ | ------ |
 | Total Test Cases   | 6      |
-| Passed             | 0      |
+| Passed             | 6      |
 | Failed             | 0      |
 | Blocked            | 0      |
-| Not Executed       | 6      |
+| Not Executed       | 0      |
 | Defects Identified | 0      |
 
-**Overall Result:** NOT EXECUTED
+**Overall Result:** PASS
 
 ---
 
@@ -286,11 +286,11 @@ The API rejected the request because the required search_product parameter was n
 
 # 6. Execution Notes
 
-* Test cases will be executed against the live Automation Exercise API.
-* Actual Results will be recorded based on the API responses observed in Postman.
-* HTTP status codes, response body, response structure, response data, and search behavior will be validated.
-* Response time may be recorded as an observation during execution.
+* Test cases were executed against the live Automation Exercise API.
+* Actual Results were recorded based on the API responses observed in Postman.
+* HTTP status codes, response body, response structure, response data, and search behavior were validated.
+* Response time was recorded as an observation during execution.
 * No performance threshold is defined for this project.
-* Defect IDs will be added only when genuine reproducible defects are identified.
-* Test cases will be executed individually and updated after execution.
+* No genuine reproducible API defects were identified during Search Product API testing.
+* All six test cases were executed individually and passed.
 * Retesting and regression testing will be documented separately if defects are identified and subsequently fixed.
