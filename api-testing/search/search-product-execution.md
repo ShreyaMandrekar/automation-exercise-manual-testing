@@ -92,12 +92,16 @@ The Search Product API returned products relevant to the supplied search term as
 The response should have the expected structure and contain applicable product information such as product ID, name, price, brand, category, and other available product fields. The response should contain the expected `responseCode`.
 
 **Actual Result:**
+The response returned multiple product records in the products collection. The product records contained applicable fields including id, name, price, brand, and category, with category information including usertype and category name. The response contained responseCode: 200 with HTTP status 200 OK. The observed response time was 1.65 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The Search Product API returned multiple product records with the expected response structure and applicable product information.
 
 ---
 
