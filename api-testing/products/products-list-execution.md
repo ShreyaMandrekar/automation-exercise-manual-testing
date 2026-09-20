@@ -159,20 +159,16 @@ The API correctly rejected the unsupported POST method and returned the expected
 The API should handle the invalid request appropriately and return a meaningful error response according to its documented behavior.
 
 **Actual Result:**
-
-...
+The GET request to the invalid endpoint returned HTTP status 404 Not Found. No responseCode field was present in the response. The response body contained HTML error-page content. The observed response time was 1.41 seconds.
 
 **Status:**
-
-...
+PASS
 
 **Defect ID:**
-
-...
+N/A
 
 **Comments:**
-
-...
+The API correctly handled the invalid endpoint by returning a 404 Not Found response.
 
 ---
 
