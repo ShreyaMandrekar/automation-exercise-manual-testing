@@ -10,7 +10,7 @@
 | HTTP Method      | POST                              |
 | Tool             | Postman                           |
 | Test Type        | API Testing                       |
-| Test Case Status | Not Executed                      |
+| Test Case Status | Executed                          |
 | Tester           | Shreya Mandrekar                  |
 
 ---
@@ -186,12 +186,12 @@ The API correctly rejected the unsupported DELETE method and returned the expect
 | Metric           | Count        |
 | ---------------- | ------------ |
 | Total Test Cases | 4            |
-| Passed           | 0            |
+| Passed           | 4            |
 | Failed           | 0            |
 | Blocked          | 0            |
-| Not Executed     | 4            |
+| Not Executed     | 0            |
 | Defects          | 0            |
-| Overall Status   | NOT EXECUTED |
+| Overall Status   | PASS         |
 
 ---
 
@@ -208,9 +208,9 @@ The API correctly rejected the unsupported DELETE method and returned the expect
 
 # 6. Execution Notes
 
-* Test cases will be executed against the live Automation Exercise API using Postman.
-* Actual Results will be recorded based on the responses received during execution.
-* HTTP status codes, response codes, response messages, and login behavior will be validated.
-* No performance threshold will be applied; response time will only be recorded as an observation where relevant.
-* Any defect will be documented only if an actual reproducible deviation from the expected behavior is observed.
-* Retesting and regression testing will be performed separately if a defect is fixed and a testable fix becomes available.
+* Test cases were executed against the live Automation Exercise API using Postman.
+* Actual Results were recorded from the responses received during execution.
+* HTTP status codes, response codes, response messages, and login behavior were validated.
+* No performance threshold was applied; response time was recorded as an observation.
+* No genuine reproducible API defects were identified.
+* All four test cases passed.
