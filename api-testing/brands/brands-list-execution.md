@@ -10,7 +10,7 @@
 | HTTP Method      | GET                               |
 | Tool             | Postman                           |
 | Test Type        | API Testing                       |
-| Test Case Status | Not Executed                      |
+| Test Case Status | Executed                          |
 | Tester           | Shreya Mandrekar                  |
 
 ---
@@ -50,7 +50,7 @@ To verify the Brands List API functionality, response structure, brand data, han
 The API should successfully process the GET request and return the expected Brands List response with HTTP 200, a successful `responseCode`, a `brands` collection, and applicable brand information.
 
 **Actual Result:**
-he GET request was successfully processed with HTTP status 200 OK. The response contained responseCode: 200, the brands collection was present, and brand records displayed applicable information including id and brand. The observed response time was 1.62 seconds.
+The GET request was successfully processed with HTTP status 200 OK. The response contained responseCode: 200, the brands collection was present, and brand records displayed applicable information including id and brand. The observed response time was 1.62 seconds.
 
 **Status:**
 PASS
@@ -177,13 +177,13 @@ The API correctly handled the invalid endpoint by returning a 404 Not Found resp
 | Metric             | Result |
 | ------------------ | ------ |
 | Total Test Cases   | 4      |
-| Passed             | 0      |
+| Passed             | 4      |
 | Failed             | 0      |
 | Blocked            | 0      |
-| Not Executed       | 4      |
+| Not Executed       | 0      |
 | Defects Identified | 0      |
 
-**Overall Result:** NOT EXECUTED
+**Overall Result:** PASS
 
 ---
 
@@ -202,11 +202,11 @@ The API correctly handled the invalid endpoint by returning a 404 Not Found resp
 
 # 6. Execution Notes
 
-* Test cases will be executed against the live Automation Exercise API.
-* Actual Results will be recorded based on the API responses observed in Postman.
-* HTTP status codes, response body, response structure, and applicable response data will be validated.
-* Response time may be recorded as an observation during execution.
+* Test cases were executed against the live Automation Exercise API.
+* Actual Results were recorded based on the API responses observed in Postman.
+* HTTP status codes, response body, response structure, and applicable response data were validated.
+* Response time was recorded as an observation during execution.
 * No performance threshold is defined for this project.
-* Defect IDs will be added only when genuine reproducible defects are identified.
-* Test cases will be executed individually and updated after execution.
+* No genuine reproducible API defects were identified during Brands List API testing.
+* All four test cases were executed individually and passed.
 * Retesting and regression testing will be documented separately if defects are identified and subsequently fixed.
