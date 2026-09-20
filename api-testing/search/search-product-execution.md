@@ -167,12 +167,16 @@ The API handled a search term with no matching products by returning an empty pr
 The API should reject the unsupported GET method and return the documented or implemented response for an unsupported request method.
 
 **Actual Result:**
+The GET request returned HTTP status 200 OK. The JSON response contained responseCode: 405 with the message This request method is not supported. The observed response time was 332 ms.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly rejected the unsupported GET method and returned the expected method-not-supported response.
 
 ---
 
