@@ -130,12 +130,16 @@ The API correctly rejected the invalid login credentials and returned the expect
 The API should return HTTP status **200 OK** with `responseCode: 400` and the response message should be **`Bad request, email or password parameter is missing in POST request.`**
 
 **Actual Result:**
+The POST request returned HTTP status 200 OK with responseCode: 400. The response message stated "Bad Request, email or password parameter is missing in POST request". The observed response time was 1.33 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly handled the missing email parameter and returned the expected 400 response code with an appropriate error message.
 
 ---
 
