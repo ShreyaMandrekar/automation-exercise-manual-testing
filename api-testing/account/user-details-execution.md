@@ -120,12 +120,16 @@ email = nonexistent_test_user_999@example.com
 The API should return an appropriate response indicating that no user account exists for the provided email.
 
 **Actual Result:**
+The GET request was processed with HTTP status 200 OK. The response contained responseCode: 404 with the message “Account not found with this email, try another email.” The observed response time was 15.92 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly returned a not-found response when a non-existing email address was provided.
 
 ---
 
