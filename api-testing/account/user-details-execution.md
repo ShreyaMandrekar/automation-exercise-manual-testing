@@ -10,7 +10,7 @@
 | HTTP Method      | GET                               |
 | Tool             | Postman                           |
 | Tester           | Shreya Mandrekar                  |
-| Execution Status | Not Executed                      |
+| Execution Status | Executed                          |
 
 ---
 
@@ -173,23 +173,25 @@ The API correctly rejected the unsupported POST method and returned the expected
 | Metric           | Count |
 | ---------------- | ----- |
 | Total Test Cases | 4     |
-| Passed           | 0     |
+| Passed           | 4     |
 | Failed           | 0     |
 | Blocked          | 0     |
-| Not Executed     | 4     |
+| Not Executed     | 0     |
 | Defects          | 0     |
 
-**Overall Status:** Not Executed
+**Overall Status:** PASS
 
 ---
 
 # 4. Execution Notes
 
-* Test execution will be performed using Postman.
-* Actual results will be recorded based on the live API response.
-* HTTP status code, `responseCode`, response message, response structure, and relevant user data will be validated.
-* Any defect will be recorded only if the observed behavior does not meet the expected result.
-* Response time will be observed and recorded where relevant; no performance threshold is defined for this project.
-* After execution, the summary and execution status will be updated.
+* Test execution was performed using Postman against the live Automation Exercise API.
+* All four User Details API test cases were executed successfully.
+* Valid email retrieval, missing email validation, non-existing email validation, and unsupported HTTP method handling were verified.
+* HTTP status codes, API response codes, response messages, response data, and response times were recorded during execution.
+* All 4 test cases passed.
+* No genuine API defects were identified during execution.
+* Response-time values were recorded for observation only; no performance threshold was defined.
+* The module execution is complete and the final execution status is Executed.
 
 ---
