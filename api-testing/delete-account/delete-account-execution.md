@@ -91,12 +91,16 @@ The API correctly rejected the request because the required email parameter was 
 The API should reject the invalid credentials and should not delete the existing user account.
 
 **Actual Result:**
+The DELETE request returned HTTP status 200 OK with responseCode: 404. The response message displayed Account not found. The request used invalid credentials, and the observed response time was 1.16 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly rejected the invalid credentials and returned an account-not-found response. The valid test account remained available for subsequent test cases.
 
 ---
 
