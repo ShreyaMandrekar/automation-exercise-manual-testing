@@ -170,12 +170,16 @@ The API correctly rejected the invalid account credentials and returned an accou
 The API should reject the unsupported GET method and return an appropriate method-not-supported response.
 
 **Actual Result:**
+The GET request returned HTTP status 405 Method Not Allowed. No responseCode field was present in the response. The response detail stated Method GET not allowed. The observed response time was 575 ms.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly rejected the unsupported GET method and returned a 405 Method Not Allowed response.
 
 ---
 
