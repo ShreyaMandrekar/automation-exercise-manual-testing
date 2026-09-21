@@ -91,12 +91,16 @@ The API successfully updated the user account and returned the expected successf
 The API should reject the request because a required parameter is missing and return an appropriate error response.
 
 **Actual Result:**
+The PUT request returned HTTP status 200 OK with responseCode: 400. The response message stated Bad request, email parameter is missing in PUT request. The observed response time was 1.84 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly rejected the update request because the required email parameter was missing, and no account update was performed.
 
 ---
 
