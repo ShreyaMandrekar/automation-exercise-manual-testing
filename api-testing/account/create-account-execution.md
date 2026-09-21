@@ -50,12 +50,16 @@ To verify the Create Account API functionality, account creation with valid data
 The API should successfully create the user account and return `responseCode: 201` with the response message **`User created!`**.
 
 **Actual Result:**
+The POST request returned HTTP status 200 OK. The response contained responseCode: 201 with the message "User created!". The observed response time was 1.15 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The Create Account API successfully created the user account and returned the expected response code and confirmation message.
 
 ---
 
