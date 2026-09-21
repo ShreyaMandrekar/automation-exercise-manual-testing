@@ -155,12 +155,16 @@ POST https://www.automationexercise.com/api/getUserDetailByEmail
 The API should reject the unsupported HTTP method and return an appropriate method-not-allowed response.
 
 **Actual Result:**
+The POST request was processed with HTTP status 200 OK. The response contained responseCode: 405 with the message “This request method is not supported.” The observed response time was 11.23 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly rejected the unsupported POST method and returned the expected method-not-supported response.
 
 ---
 
