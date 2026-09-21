@@ -51,12 +51,16 @@ To verify the Update User Account API functionality, account data validation, cr
 The API should successfully update the user account and return `responseCode: 200` with the response message **`User updated!`**.
 
 **Actual Result:**
+The PUT request returned HTTP status 200 OK with responseCode: 200. The response message was User updated!. The account update was successfully processed using valid account credentials and updated account data. The observed response time was 2.06 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API successfully updated the user account and returned the expected successful response.
 
 ---
 
