@@ -10,7 +10,7 @@
 | HTTP Method      | POST                              |
 | Tool             | Postman                           |
 | Test Type        | API Testing                       |
-| Test Case Status | Not Executed                      |
+| Test Case Status | Executed                          |
 | Tester           | Shreya Mandrekar                  |
 
 ---
@@ -186,12 +186,12 @@ The API correctly rejected the unsupported GET method and returned a 405 Method 
 | Metric           | Count        |
 | ---------------- | ------------ |
 | Total Test Cases | 4            |
-| Passed           | 0            |
+| Passed           | 4            |
 | Failed           | 0            |
 | Blocked          | 0            |
-| Not Executed     | 4            |
+| Not Executed     | 0            |
 | Defects          | 0            |
-| Overall Status   | NOT EXECUTED |
+| Overall Status   | PASS         |
 
 ---
 
@@ -208,10 +208,11 @@ The API correctly rejected the unsupported GET method and returned a 405 Method 
 
 # 6. Execution Notes
 
-* Test cases will be executed against the live Automation Exercise API using Postman.
-* Actual Results will be recorded based on the responses received during execution.
-* HTTP status codes, response codes, response messages, account creation behavior, and parameter validation will be validated.
-* A unique test email will be used for the successful account creation test to avoid unintended duplicate-account results.
-* No performance threshold will be applied; response time will only be recorded as an observation where relevant.
-* Any defect will be documented only if an actual reproducible deviation from the expected behavior is observed.
+* Test cases were executed against the live Automation Exercise API using Postman.
+* Actual Results were recorded based on the responses received during execution.
+* HTTP status codes, response codes, response messages, account creation behavior, and parameter validation were validated.
+* A unique test email was used for the successful account creation test to avoid unintended duplicate-account results.
+* No performance threshold was applied; response time was recorded as an observation where relevant.
+* No genuine reproducible API defects were identified during execution.
+* All four test cases were executed individually and passed.
 * Retesting and regression testing will be performed separately if a defect is fixed and a testable fix becomes available.
