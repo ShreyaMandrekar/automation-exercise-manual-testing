@@ -168,12 +168,16 @@ The API correctly rejected the account creation request using an already registe
 The API should reject the unsupported GET method and return an appropriate method-not-supported response.
 
 **Actual Result:**
+The GET request returned HTTP status 405 Method Not Allowed. No responseCode field was present in the response. The response message stated detail: Method GET not allowed. The observed response time was 1.25 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly rejected the unsupported GET method and returned a 405 Method Not Allowed response.
 
 ---
 
