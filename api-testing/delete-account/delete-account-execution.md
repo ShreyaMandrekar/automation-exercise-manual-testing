@@ -50,12 +50,16 @@ To verify the Delete User Account API functionality, credential validation, requ
 The API should reject the request because the required email parameter is missing and return an appropriate error response.
 
 **Actual Result:**
+The DELETE request returned HTTP status 200 OK with responseCode: 400. The response message stated Bad request, email parameter is missing in delete request. The request contained the valid password but did not include the required email parameter. The observed response time was 902 ms.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly rejected the request because the required email parameter was missing, and the test account remained available for subsequent test cases.
 
 ---
 
