@@ -130,12 +130,16 @@ The API correctly rejected the account creation request when the required email 
 The API should reject the duplicate account request and return an appropriate response indicating that the email address is already registered or cannot be used to create another account.
 
 **Actual Result:**
+The POST request returned HTTP status 200 OK with responseCode: 400. The response message stated "Email already exists!". The observed response time was 1.85 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly rejected the account creation request using an already registered email address and returned the expected 400 response code with an appropriate duplicate-email message.
 
 ---
 
