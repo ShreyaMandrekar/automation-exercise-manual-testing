@@ -44,12 +44,16 @@ email = <valid registered email>
 The API should successfully retrieve the user details for the provided email. The response should contain `responseCode: 200` and the user details in the response body.
 
 **Actual Result:**
+The GET request was successfully processed with HTTP status 200 OK. The response contained responseCode: 200 and a user object with the expected user details, including ID, name, email, title, date of birth, address, country, state, city, and zipcode. The observed response time was 1.67 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The User Details API successfully retrieved the user details for the valid registered email address.
 
 ---
 
