@@ -170,12 +170,16 @@ The API correctly rejected the unsupported GET method and returned a 405 Method 
 The API should successfully delete the user account and return `responseCode: 200` with the response message **`Account deleted!`**.
 
 **Actual Result:**
+The DELETE request returned HTTP status 200 OK with responseCode: 200. The response message was Account deleted!. The observed response time was 952 ms.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The user account was successfully deleted using valid credentials, and the API returned the expected successful deletion response.
 
 ---
 
