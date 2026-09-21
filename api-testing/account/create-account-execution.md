@@ -90,12 +90,16 @@ The Create Account API successfully created the user account and returned the ex
 The API should reject the incomplete request and return an appropriate error response indicating that the required account information is missing.
 
 **Actual Result:**
+The POST request returned HTTP status 200 OK with responseCode: 400. The response message stated Bad request, email parameter is missing in POST request. The observed response time was 1.37 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly rejected the account creation request when the required email parameter was omitted and returned the expected 400 response code with an appropriate error message.
 
 ---
 
