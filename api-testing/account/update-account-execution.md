@@ -132,12 +132,16 @@ The API correctly rejected the update request because the required email paramet
 The API should reject the invalid credentials and should not update the existing account.
 
 **Actual Result:**
+The PUT request returned HTTP status 200 OK with responseCode: 404. The response message was Account not found. The observed response time was 1.94 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly rejected the invalid account credentials and returned an account-not-found response. The valid user account was not modified.
 
 ---
 
