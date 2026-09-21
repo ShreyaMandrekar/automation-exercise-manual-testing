@@ -10,7 +10,7 @@
 | HTTP Method      | DELETE                            |
 | Tool             | Postman                           |
 | Test Type        | API Testing                       |
-| Test Case Status | Not Executed                      |
+| Test Case Status | Executed                          |
 | Tester           | Shreya Mandrekar                  |
 
 ---
@@ -188,12 +188,12 @@ The user account was successfully deleted using valid credentials, and the API r
 | Metric           | Count        |
 | ---------------- | ------------ |
 | Total Test Cases | 4            |
-| Passed           | 0            |
+| Passed           | 4            |
 | Failed           | 0            |
 | Blocked          | 0            |
-| Not Executed     | 4            |
+| Not Executed     | 0            |
 | Defects          | 0            |
-| Overall Status   | NOT EXECUTED |
+| Overall Status   | PASS         |
 
 ---
 
@@ -210,12 +210,13 @@ The user account was successfully deleted using valid credentials, and the API r
 
 # 6. Execution Notes
 
-* Test cases will be executed against the live Automation Exercise API using Postman.
-* Actual Results will be recorded based on the responses received during execution.
-* HTTP status codes, response codes, response messages, credential validation, parameter validation, and account deletion behavior will be validated.
-* The dedicated test account created during the Create Account API testing will be retained until the final successful deletion test.
-* Negative test cases will be executed before the successful deletion test so that the test account remains available.
-* TC-API-DELETE-004 will be executed last because successful execution permanently deletes the test account.
-* No performance threshold will be applied; response time will only be recorded as an observation where relevant.
-* Any defect will be documented only if an actual reproducible deviation from the expected behavior is observed.
-* Retesting and regression testing will be performed separately if a defect is fixed and a testable fix becomes available.
+- Test cases were executed against the live Automation Exercise API using Postman.
+- Actual Results were recorded based on the responses received during execution.
+- HTTP status codes, response codes, response messages, credential validation, required parameter handling, unsupported method behavior, and account deletion behavior were validated.
+- The dedicated test account created during the Create Account API testing was retained until the final successful deletion test.
+- Negative test cases were executed before the successful deletion test so that the test account remained available.
+- TC-API-DELETE-004 was executed last because successful execution permanently deleted the test account.
+- Response time was recorded as an observation; no performance threshold was applied.
+- No genuine reproducible API defects were identified during execution.
+- All four test cases were executed individually and passed.
+- Retesting and regression testing will be performed separately if a defect is fixed and a testable fix becomes available.
