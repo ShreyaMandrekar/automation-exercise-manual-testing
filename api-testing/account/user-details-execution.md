@@ -79,12 +79,16 @@ GET https://www.automationexercise.com/api/getUserDetailByEmail
 The API should return an appropriate error response indicating that the required email parameter is missing.
 
 **Actual Result:**
+The GET request was processed with HTTP status 200 OK. The response contained responseCode: 400 with the message “Bad Request, email parameter is missing in GET request.” The observed response time was 6.66 seconds.
 
 **Status:**
+PASS
 
 **Defect ID:**
+N/A
 
 **Comments:**
+The API correctly returned a validation response when the required email parameter was omitted.
 
 ---
 
